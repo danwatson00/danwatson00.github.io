@@ -1,6 +1,35 @@
+#menu {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 8em;
+    margin-top: -2.5em;
+  }
 
+  /* unvisited link */
+a:link {
+    color: green;
+}
 
-.container {
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+    transition: background-color 0.5s ease;
+    background-color: lightslategray;
+}
+
+/* selected link */
+a:active {
+    color: yellow;
+    font-size: 110%;
+}
+
+container {
     
     font-family: Cerebri,Helvetica,Arial,sans-serif;
     font-weight: 400;
