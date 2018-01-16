@@ -1,34 +1,3 @@
-#menu {
-    position: fixed;
-    right: 0;
-    top: 50%;
-    width: 8em;
-    margin-top: -2.5em;
-  }
-
-  /* unvisited link */
-a:link {
-    color: green;
-}
-
-/* visited link */
-a:visited {
-    color: green;
-}
-
-/* mouse over link */
-a:hover {
-    color: red;
-    transition: background-color 0.5s ease;
-    background-color: lightslategray;
-}
-
-/* selected link */
-a:active {
-    color: yellow;
-    font-size: 110%;
-}
-
 container {
     
     font-family: Cerebri,Helvetica,Arial,sans-serif;
@@ -36,5 +5,76 @@ container {
     font-size: 1.8rem;
     color: #000;
     letter-spacing: -.018rem;
+    padding: 16px;
 
 }
+
+/* Main content */
+main {
+    margin-top: 80px; /* Add a top margin to avoid content overlay */
+}
+
+#logo-bar {
+    height: 60px;
+}
+
+.navbar {
+   overflow: hidden;
+   background-color: rgba(128, 128, 128, 0.5);
+   position: fixed; /* Set the navbar to fixed position */
+   top: 0; /* Position the navbar at the top of the page */
+   width: 100%; /* Full width */
+}
+
+  /* remove bullets from nav list */
+nav ul {
+   list-style-type: none;
+}
+
+  /* unvisited link */
+.navbar a:link {
+   display: block;
+   float: left;
+   color: #f2f2f2;
+   text-align: right;
+   padding: 14px 16px;
+   text-decoration: none;
+  
+}
+
+/* visited link */
+.navbar a:visited {
+   color: green;
+}
+
+/* mouse over link */
+.navbar a:hover {
+    color: red;
+    transition: background-color 0.5s ease;
+    background-color: lightslategray;
+
+}
+
+/* selected link */
+.navbar a:active {
+    color: yellow;
+    font-size: 110%;
+}
+
+#flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#cards {
+    background-color: #fff;
+    width: 250px;
+    border: 3px solid #eb752f;
+    padding: 15px;
+    margin: 25px;
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 6px 7px 31px -1px rgba(0,0,0,0.75);
