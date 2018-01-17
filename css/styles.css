@@ -1,12 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
 container {
-    
-    font-family: Cerebri,Helvetica,Arial,sans-serif;
     font-weight: 400;
     font-size: 1.8rem;
     color: #000;
     letter-spacing: -.018rem;
     padding: 16px;
-
 }
 
 /* Main content */
@@ -15,36 +14,39 @@ main {
 }
 
 #logo-bar {
-    height: 60px;
+    height: 70px;
 }
 
 .navbar {
    overflow: hidden;
-   background-color: rgba(128, 128, 128, 0.5);
    position: fixed; /* Set the navbar to fixed position */
    top: 0; /* Position the navbar at the top of the page */
-   width: 100%; /* Full width */
+   width: 99%; /* Full width */
+   font-family: 'Open Sans', sans-serif;
+   border: 4px solid black;
 }
 
   /* remove bullets from nav list */
 nav ul {
    list-style-type: none;
+   
 }
 
   /* unvisited link */
 .navbar a:link {
    display: block;
-   float: left;
-   color: #f2f2f2;
+   float: right;
+   text-align: center;
+   color: black;
    text-align: right;
-   padding: 14px 16px;
+   padding: 5px 20px 23px 10px;
    text-decoration: none;
   
 }
 
 /* visited link */
 .navbar a:visited {
-   color: green;
+   color: gray;
 }
 
 /* mouse over link */
