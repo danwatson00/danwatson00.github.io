@@ -8,7 +8,7 @@
     <title>Dan Watson, Front End Web Developer, Nashville, TN</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/normalize.css">
     
    </head>
 
@@ -17,11 +17,10 @@
     <div class="container">
 
         <header>
-            <div id="navbar">
-            <img src="img/dw-logo1.png" id="nav-logo" alt="Dan Watson logo">
-            <nav class="nav">
+            <img src="img/dw-logo1.png" id="logo-bar" alt="Dan Watson logo">
+            <nav class="navbar">
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
+                   <li><a href="index.html">HOME</a></li>
                     <li><a href="portfolio.html">PORTFOLIO</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="resume.html">RESUME</a></li>
@@ -29,7 +28,6 @@
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </nav>
-            </div>
         </header>
 
         <main>
@@ -37,22 +35,24 @@
                 <h1>Dan Watson</h1>
                 <h2>Front End Web Developer and UX/UI Designer</h2>
             </div>
-            <div class="text">
-                <p class="animep">Design is</p>
-                <p class="animep">
-                    <span class="word wisteria">beautiful.</span>
-                    <span class="word belize">informative.</span>
-                    <span class="word pomegranate">intuitive.</span>
-                    <span class="word green">essential.</span>
-                    <span class="word midnight">everywhere.</span>
-                </p>
+            <div id="numberGameDiv">
+                <h2>Number Guessing Game</h2>
+                <p>A random number between 1 and 100 has been generated. See if you can guess the number in 10 tries or fewer. We'll let you know if you your guess is too high or too low.</p>
+                <div id="game-form" class="form">
+                    <label for="guessField">Enter a guess: </label><input type="text" id="guessField" class="guessField">
+                    <input type="submit" value="Submit guess" class="guessSubmit">
+                </div>
+                <div class="resultsParas">
+                    <p class="guesses"></p>
+                    <p class="lastResult"></p>
+                    <p class="lowOrHi"></p>
+                </div>
             </div>
         </main>
 
         <footer class="footer">All content &#169; Dan Watson, 2018</footer>
     </div>
-    <script src="js/scripts.js"></script>
-    <script src="js/index-anime.js"></script>
+    <script src="js/number-guess.js"></script>
    </body>
 
 </html>
