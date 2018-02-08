@@ -1,3 +1,4 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
 
 /* to get sticky footer */
@@ -17,72 +18,67 @@ main {
 
 }
 
-#logo-bar {
-    height: 70px;
-    position: fixed;
-    top: 0;
-}
+#navbar {
+   display: flex;
 
-.navbar {
-   overflow: hidden;
-   position: fixed; /* Set the navbar to fixed position */
-   top: 0; /* Position the navbar at the top of the page */
-   width: 99%; /* Full width */
-   font-family: 'Open Sans', sans-serif;
-}
-
-  /* remove bullets from nav list */
-nav ul {
-   list-style-type: none;
+/* #navbar {
+   display: flex;
+   flex direction: row;
+   flex-wrap: no-wrap;
+   position: fixed;  Set the navbar to fixed position
+   top: 0; Position the navbar at the top of the page
+   width: 100%; Full width
+   margin-left: 325px;
+   height: 70px;
+   align-items: center;
    
 }
 
+#nav-logo {
+  position: fixed;
+  top: 0;
+} */
+
+
+
+  /* remove bullets from nav list */
+
+.nav {
+  list-style-type: none;
+}
+
+nav ul li {
+  float: left;
+}
+
   /* unvisited link */
-.navbar a:link {
-   display: block;
-   float: right;
-   text-align: center;
+.nav a:link {
    color: black;
-   text-align: right;
    padding: 5px 20px 23px 10px;
    text-decoration: none;
-  
 }
 
 /* visited link */
-.navbar a:visited {
+.nav a:visited {
    color: rgb(48, 47, 47);
 }
 
 /* mouse over link */
-.navbar a:hover {
+.nav a:hover {
     color: rgb(243, 4, 4);
-    transition: background-color 0.5s ease;
-    background-color: lightslategray;
-
+    transition: color 0.5s ease;
 }
 
 /* selected link */
-.navbar a:active {
+.nav a:active {
     color: yellow;
-    font-size: 110%;
 }
 
-/* #flexContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-} */
 
 
-/** Rotating text on homepage **/
+/** Design is... Rotating text display on homepage **/
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
-
-body {
-  
-}
 
 .text {
   font-family: 'Open Sans', sans-serif;
@@ -150,6 +146,7 @@ body {
 .midnight {
   color: #2c3e50;
 }
+/* End Design Is... */
 
 
 /* Rubberband Text */
@@ -226,7 +223,7 @@ body {
 
 
 
-/* Cards CSS */
+/* Blog Cards CSS */
 .cards {
    display: flex;
    flex-wrap: wrap;
