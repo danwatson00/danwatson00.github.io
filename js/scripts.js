@@ -1,10 +1,12 @@
-var postImg = 
+"use strict";
 
-var postTitle = 
+var postImg = {};
 
-var postDate = 
+var postTitle = {};
 
-var postDesc =
+var postDate = {};
+
+var postDesc = {};
 
 var cardContent = [postImg, postTitle, postDate, postDesc];
 

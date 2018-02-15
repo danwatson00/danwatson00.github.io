@@ -1,3 +1,5 @@
+"use strict";
+
 //This generates a random whole number between 1 and 100
 var randomNumber = Math.floor(Math.random() * 100) + 1;
 
