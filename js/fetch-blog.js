@@ -5,7 +5,7 @@ var blogPosts = {};
 let blogPostData = [];
 
 let parseData = (data) => {
-    data.blog-data.forEach((element) => {
+    data.blogData.forEach(function(element) {
         blogPostData.push(element);
     });
     return blogPostData;

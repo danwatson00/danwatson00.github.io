@@ -1,9 +1,11 @@
+"use strict";
+
 var words = document.getElementsByClassName('word');
 var wordArray = [];
 var currentWord = 0;
 
 words[currentWord].style.opacity = 1;
-for (var i = 0; i < words.length; i++) {
+for (let i = 0; i < words.length; i++) {
     splitLetters(words[i]);
 }
 
@@ -14,7 +16,7 @@ function changeWord() {
         animateLetterOut(cw, i);
     }
 
-    for (var i = 0; i < nw.length; i++) {
+    for (let i = 0; i < nw.length; i++) {
         nw[i].className = 'letter behind';
         nw[0].parentElement.style.opacity = 1;
         animateLetterIn(nw, i);
