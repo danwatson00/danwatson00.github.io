@@ -8,7 +8,7 @@ let blogPostPromise = () => {
     new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve("DanTEST");
-        }, 500);
+        }, 100);
     }).then((resolve) => {
         console.log("resolve", resolve);
     });
@@ -16,3 +16,5 @@ let blogPostPromise = () => {
 
 blogPostPromise();
 console.log("Hello");
+
+module.exports = { blogPostPromise };
