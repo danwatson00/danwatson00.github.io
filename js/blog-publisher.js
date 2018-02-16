@@ -2,7 +2,7 @@
 
 console.log("blog-publisher.js");
 
-let db = require("./js/fetch-blog.js");
+let db = require("./fetch-blog");
 
 let blogPostPromise = () => {
     new Promise((resolve, reject) => {
