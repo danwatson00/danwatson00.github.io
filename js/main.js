@@ -4,4 +4,17 @@ let blogPosts = require("./fetch-blog");
 
 let x = require("./blog-publisher");
 
-blogPosts.blogPosts.loadPost();
+let loadedPosts = blogPosts.posts.loadPost()
+.then(
+    (resolve) => {
+        console.log("resolve: ",resolve);
+        x.showPosts(resolve);
+
+    },
+    (reject) => {
+        console.error("OOPS", reject);
+    }
+);
+
+
+
