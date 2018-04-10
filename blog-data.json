@@ -34,6 +34,20 @@
             "publishDate": "February 15, 2018",
             "author": "Dan Watson",
             "content": "As we continue our work building more complex and functional applications, all of things we've learned to this point are beginning come together."
+        },
+        {   "title": "Building Cool Stuff",
+            "category": "Coding",
+            "publishDate": "February 21, 2018",
+            "author": "Dan Watson",
+            "content": "Now that we have learned incorporate Grunt, Firebase, Bootstrap and other services, we are starting to build some really cool web applications."
+
+        },
+        {
+            "title": "UX/UI is Critical",
+            "category": "Coding",
+            "publishDate": "February 28, 2018",
+            "author": "Dan Watson",
+            "content": ""
         }
 
     ]

@@ -2,8 +2,8 @@
 console.log("fetch-blog.js");
 
 //creates an empty object
-var blogPosts = {};
-console.log(blogPosts);
+let posts = {};
+console.log("posts", posts);
 
 //creates an empty array
 let blogPostData = [];
@@ -11,25 +11,25 @@ console.log(blogPostData);
 
 //parses the data and pushes it all to blogPostData
 let parseData = (data) => {
-    console.log(data);
+    /* console.log(data);
     let keys = Object.keys(data);
-    keys.forEach(function(element) {
-        blogPostData.push(data[element]);
-    });
-    
-    console.log("parse", blogPostData);
-    return blogPostData;
-};
+    keys.forEach(function(element) { */
+        data.blogPosts.forEach( (element) => {
+            blogPostData.push(element); 
+        });
+        console.log("parse", blogPostData);
+        return blogPostData;
+    };
 
-/* blogPosts.getPost = () => {
+posts.getPost = () => {
     console.log("getPost: ", blogPostData);
     return blogPostData;  
-}; */
+};
 
-blogPosts.loadPost = () => {
+posts.loadPost = () => {
     return new Promise((resolve, reject) => {
         let request = new XMLHttpRequest();
-        request.open('GET', "/blog-data.json");
+        request.open('GET', "./blog-data.json");
         request.onload = function () {
             if (request.status === 200) {
                 //sucess
@@ -49,4 +49,4 @@ blogPosts.loadPost = () => {
     });
 };
 
-module.exports = {blogPosts};
+module.exports = {posts};
