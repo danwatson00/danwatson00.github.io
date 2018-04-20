@@ -1,8 +1,12 @@
 "use strict";
 
-let blogPosts = require("./fetch-blog");
+let $ = require('jquery'),
+    blogPosts = require("./fetch-blog"),
+    blast = require("./blast-text"),
+    x = require("./blog-publisher");
 
-let x = require("./blog-publisher");
+$("#intro").blast({ delimiter: "character" });
+
 
 let loadedPosts = blogPosts.posts.loadPost()
 .then(

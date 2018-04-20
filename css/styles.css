@@ -1,58 +1,52 @@
-/* Import Google Fonts */
+/* Blog Cards CSS */
 @import url("https://fonts.googleapis.com/css?family=Lato:light|Roboto");
-/* to get sticky footer */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
-html, body {
-  height: 100%; }
-
-.container {
-  position: relative;
-  min-height: 100%;
-  padding: 0 0 60px 0; }
-
-/* Main content */
-main {
-  margin: 80px 20px 0 20px;
-  /* Add a top margin to avoid content overlay */ }
-
-#navbar {
+@import url("https://fonts.googleapis.com/css?family=Lato:light|Roboto");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+.cards {
   display: flex;
-  height: 70px;
-  width: 100%;
-  flex-direction: row;
-  flex-wrap: no-wrap; }
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 900px; }
 
-/* remove bullets from nav list */
-nav ul li {
-  float: left;
-  list-style-type: none; }
+.card {
+  flex: 0 1 calc(25% - 1em);
+  box-sizing: border-box;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 1rem .25em;
+  padding: 15px;
+  border: 2px solid gray;
+  box-shadow: 2px 6px 12px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.3s; }
 
-#nav-logo {
+.card:hover {
+  box-shadow: 4px 6px 15px 0 rgba(0, 0, 0, 0.5); }
+
+.card2 {
+  flex: 0 1 calc(25% - 1em);
+  background-image: url("https://danwatson00.github.io/img/coding-screen.jpg");
+  max-height: 100%;
+  max-width: 100%;
+  margin: 1rem .25em;
+  padding: 10px;
+  border: 2px solid black;
+  box-shadow: 6px 7px 31px -1px rgba(0, 0, 0, 0.75);
+  color: white;
+  background-position: 50% 50%; }
+
+.postImg {
   max-height: 100%;
   max-width: 100%; }
 
-/* unvisited link */
-.nav a:link {
-  color: black;
-  padding: 5px 20px 23px 10px;
-  text-decoration: none; }
-
-/* visited link */
-.nav a:visited {
-  color: #302f2f; }
-
-/* mouse over link */
-.nav a:hover {
-  color: #f30404;
-  transition: color 0.5s ease; }
-
-/* selected link */
-.nav a:active {
-  color: yellow; }
+.postImg2 {
+  object-fit: cover; }
 
 /** Design is... Rotating text display on homepage **/
+/* Import Google Fonts */
 .text {
-  font-family: 'Lato', sans-serif;
+  font-family: Lato, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 40px;
   position: absolute;
@@ -107,6 +101,169 @@ nav ul li {
   color: #2c3e50; }
 
 /* End Design Is... */
+/* Import Google Fonts */
+/* Footer */
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center; }
+
+#portfolio-div {
+  margin: 0 auto;
+  display: grid;
+  color: white;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "first first first second" "first first first third" "fourth fifth fifth fifth" "sixth fifth fifth fifth";
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+
+.port-card {
+  text-align: center;
+  border: 1px solid #333;
+  min-height: 200px;
+  min-width: 300px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  justify-content: stretch;
+  /* align horizontal */ }
+
+.port-heading {
+  background: rgba(70, 70, 70, 0.7);
+  opacity: 0;
+  grid-row: 2;
+  width: 100%;
+  -webkit-transition: opacity 0.8s;
+  /* Safari */
+  transition: opacity .8s;
+  margin: 0 0; }
+
+.port-card:hover .port-heading {
+  opacity: 1; }
+
+.port-card:hover .port-logo {
+  width: 45%; }
+
+.port-logo {
+  margin: auto;
+  grid-row: 1;
+  width: 40%;
+  vertical-align: middle;
+  -webkit-transition: width .8s;
+  /* Safari */
+  transition: width .8s; }
+
+.port-card h4 {
+  position: relative;
+  font-size: 1em;
+  vertical-align: bottom;
+  margin: 5px 0; }
+
+.port-card h5 {
+  position: relative;
+  font-size: 0.7em;
+  vertical-align: bottom;
+  margin: 5px 0; }
+
+#first {
+  background: linear-gradient(rgba(70, 70, 70, 0.5), rgba(70, 70, 70, 0.5)), url("/img/my-camera-bag-screen.png") no-repeat center;
+  background-size: cover;
+  grid-area: first; }
+
+#second {
+  background: linear-gradient(rgba(70, 70, 70, 0.5), rgba(70, 70, 70, 0.5)), url("/img/boys_girls_club.png") no-repeat center;
+  background-size: cover;
+  grid-area: second; }
+
+#third {
+  background: url("/img/boys_girls_club.png") no-repeat center;
+  background-size: cover;
+  grid-area: third; }
+
+#fourth {
+  background: url("/img/photo_blaster_2.jpg") no-repeat center;
+  background-size: cover;
+  grid-area: fourth; }
+
+#fifth {
+  background: url("/img/coding-screen.jpg") no-repeat center;
+  background-size: cover;
+  grid-area: fifth; }
+
+#sixth {
+  background: linear-gradient(rgba(70, 70, 70, 0.5), rgba(70, 70, 70, 0.5)), url("/img/danwatson01.jpg") no-repeat center;
+  background-size: cover;
+  grid-area: sixth; }
+
+#hi {
+  font-size: 3em;
+  margin: 0.25em 0;
+  font-family: Roboto, Helvetica, sans-serif; }
+
+#hi-follow {
+  font-size: 3em;
+  margin: 0.25em 0;
+  font-family: Roboto, Helvetica, sans-serif; }
+
+/* Media Queries */
+@media screen and (min-width: 40em) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+
+  .card {
+    flex: 0 1 calc(25% - 1em); } }
+@media screen and (min-width: 40em) and (min-width: 60em) {
+  .cards {
+    flex: 0 1 calc(25% - 1em); }
+
+  .card {
+    flex: 0 1 calc(50% - 1em); } }
+@media screen and (min-width: 40em) {
+  /* @media screen and (min-width: 52em) {
+      .centered {
+          
+      } */ }
+#navbar {
+  display: flex;
+  height: 70px;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: no-wrap; }
+
+/* remove bullets from nav list */
+nav ul li {
+  float: left;
+  list-style-type: none; }
+
+#nav-logo {
+  max-height: 100%;
+  max-width: 100%; }
+
+/* unvisited link */
+.nav a:link {
+  color: black;
+  padding: 5px 20px 23px 10px;
+  text-decoration: none; }
+
+/* visited link */
+.nav a:visited {
+  color: #302f2f; }
+
+/* mouse over link */
+.nav a:hover {
+  color: #f30404;
+  transition: color 0.5s ease; }
+
+/* selected link */
+.nav a:active {
+  color: yellow; }
+
 /* Rubberband Text */
 .rubberBand {
   -webkit-animation-name: rubberBand;
@@ -160,81 +317,24 @@ nav ul li {
   100% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
-/* Blog Cards CSS */
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 900px; }
+/* to get sticky footer */
+html, body {
+  height: 100%;
+  color: #333; }
 
-.card {
-  flex: 0 1 calc(25% - 1em);
-  box-sizing: border-box;
-  max-height: 100%;
-  max-width: 100%;
-  margin: 1rem .25em;
-  padding: 15px;
-  border: 2px solid gray;
-  box-shadow: 2px 6px 12px 0 rgba(0, 0, 0, 0.4);
-  transition: 0.3s; }
+.container {
+  position: relative;
+  min-height: 100%;
+  padding: 0 0 60px 0; }
 
-.card:hover {
-  box-shadow: 4px 6px 15px 0 rgba(0, 0, 0, 0.5); }
-
-.card2 {
-  flex: 0 1 calc(25% - 1em);
-  background-image: url("https://danwatson00.github.io/img/coding-screen.jpg");
-  max-height: 100%;
-  max-width: 100%;
-  margin: 1rem .25em;
-  padding: 10px;
-  border: 2px solid black;
-  box-shadow: 6px 7px 31px -1px rgba(0, 0, 0, 0.75);
-  color: white;
-  background-position: 50% 50%; }
-
-.postImg {
-  max-height: 100%;
-  max-width: 100%; }
-
-.postImg2 {
-  object-fit: cover; }
+/* Main content */
+main {
+  margin: 80px 20px 0 20px;
+  /* Add a top margin to avoid content overlay */ }
 
 /* Social Icons on Contact Page */
 .socialIcon {
   height: 42px;
   border: 0; }
-
-/* Footer */
-.footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center; }
-
-/* Media Queries */
-@media screen and (min-width: 40em) {
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-
-  .card {
-    flex: 0 1 calc(25% - 1em); } }
-@media screen and (min-width: 40em) and (min-width: 60em) {
-  .cards {
-    flex: 0 1 calc(25% - 1em); }
-
-  .card {
-    flex: 0 1 calc(50% - 1em); } }
-@media screen and (min-width: 40em) {
-  /* @media screen and (min-width: 52em) {
-      .centered {
-          
-      } */ }
 
 /*# sourceMappingURL=styles.css.map */

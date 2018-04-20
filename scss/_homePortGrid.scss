@@ -1,0 +1,16 @@
+//home portfolio grid area
+
+#portfolio-div {
+    margin: 0 auto;
+    display: grid;
+    color: $white;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+                "first first first second"
+                "first first first third"
+                "fourth fifth fifth fifth"
+                "sixth fifth fifth fifth";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
