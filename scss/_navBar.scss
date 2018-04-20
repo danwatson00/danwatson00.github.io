@@ -1,0 +1,43 @@
+
+#navbar {
+   display: flex;
+   height: 70px;
+   width: 100%;
+   flex-direction: row;
+   flex-wrap: no-wrap;
+}
+
+/* remove bullets from nav list */
+nav ul li {
+  float: left;
+  list-style-type: none;
+}
+
+#nav-logo {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+  /* unvisited link */
+.nav a:link {
+   color: black;
+   padding: 5px 20px 23px 10px;
+   text-decoration: none;
+}
+
+/* visited link */
+.nav a:visited {
+   color: rgb(48, 47, 47);
+}
+
+/* mouse over link */
+.nav a:hover {
+    color: rgb(243, 4, 4);
+    transition: color 0.5s ease;
+}
+
+/* selected link */
+.nav a:active {
+    color: yellow;
+}
+

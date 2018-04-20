@@ -1,0 +1,114 @@
+.port-card {
+    text-align: center;
+    border: 1px solid $black;
+    min-height: 200px;
+    min-width: 300px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    justify-content: stretch; /* align horizontal */
+}
+
+.port-heading {
+    background: rgba(70, 70, 70, 0.7);
+    opacity: 0;
+    grid-row: 2;
+    width: 100%;
+    -webkit-transition: opacity 0.8s; /* Safari */
+    transition: opacity .8s;
+    margin: 0 0;
+}
+
+.port-card:hover .port-heading {
+    opacity: 1;
+}
+
+.port-card:hover .port-logo {
+    width: 45%;
+}
+
+// .port-card:hover .port-hide {
+//     display: inline;
+//     position: relative;
+//     z-index: 2;
+//     transition: display 1s;
+//     -webkit-transition: display 1s; /* Safari */
+// }
+
+.port-logo {
+    margin: auto;
+    grid-row: 1;
+    width: 40%;
+    vertical-align: middle;
+    -webkit-transition: width .8s; /* Safari */
+    transition: width .8s;
+
+}
+
+// .port-hide {
+//     display: none;
+// }
+
+.port-card h4 {
+    position: relative;
+    font-size: 1em;
+    vertical-align: bottom;
+    margin: 5px 0;
+}
+
+.port-card h5 {
+    position: relative;
+    font-size: 0.7em;
+    vertical-align: bottom;
+    margin: 5px 0;
+}
+
+
+#first {
+    background: 
+        linear-gradient(
+            rgba(70, 70, 70, 0.5),
+            rgba(70, 70, 70, 0.5)
+        ),
+        url("/img/my-camera-bag-screen.png") no-repeat center;
+    background-size: cover;
+    grid-area: first;
+}
+
+#second {
+    background: linear-gradient(
+            rgba(70, 70, 70, 0.5),
+            rgba(70, 70, 70, 0.5)
+        ),
+        url("/img/boys_girls_club.png") no-repeat center;
+    background-size: cover;
+    grid-area: second;
+}
+
+#third {
+    background: url("/img/boys_girls_club.png") no-repeat center;
+    background-size: cover;
+    grid-area: third;
+}
+
+#fourth {
+    background: url("/img/photo_blaster_2.jpg") no-repeat center;
+    background-size: cover;
+    grid-area: fourth;
+}
+
+#fifth {
+    background: url("/img/coding-screen.jpg") no-repeat center;
+    background-size: cover;
+    grid-area: fifth;
+}
+
+#sixth {
+    background: linear-gradient(
+            rgba(70, 70, 70, 0.5),
+            rgba(70, 70, 70, 0.5)
+        ),
+        url("/img/danwatson01.jpg") no-repeat center;
+    background-size: cover;
+    grid-area: sixth;
+}
+
