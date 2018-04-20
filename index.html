@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Dan Watson, Front End Web Developer, Nashville, TN</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/styles.css">
     
    </head>
@@ -24,7 +25,7 @@
                     <li><a href="portfolio.html">PORTFOLIO</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="resume.html">RESUME</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
+                    <!-- <li><a href="blog.html">BLOG</a></li> -->
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </nav>
@@ -32,11 +33,56 @@
         </header>
 
         <main>
-            <div>
-                <h1>Dan Watson</h1>
-                <h2>Front End Web Developer and UI/UX Designer</h2>
+
+            <div id="intro">
+                <h2 id="hi" class="slideInLeft">Hi, I'm Dan.</h2>
+                <h1 id="hi-follow" class="slideInRight">Front End Web Developer + UI/UX Designer</h1>
             </div>
-            <div class="text">
+            
+            <!-- Porfolio Grid -->
+            <div id="portfolio-div">
+
+                <div id="first" class="port-card">
+                    <img src="/img/my-camera-bags-logo.png" class="port-logo" alt="my camera bags logo" />
+                    <div class="port-heading">
+                        <h4 class="port-hide">My Camera Bags</h4>
+                        <h5 class="port-hide">Independent Capstone Project</h5>
+                    </div>
+                </div>
+
+                <div id="second" class="port-card">
+                    <img src="/img/bgc-logo.png" class="port-logo" alt="boys and girls club logo" />
+                    <div class="port-heading">
+                        <h4 class="port-hide">Hack for the Community</h4>
+                        <h5 class="port-hide">First Place Project</h5>
+                    </div>
+                </div>
+
+                <div id="third" class="port-card">
+                    <h4>My Camera Bag App</h4>
+                </div>
+                <div id="fourth" class="port-card">
+                    <img src="/img/photo-blaster-logo.png" class="port-logo" alt="photo blaster logo" />
+                    <div class="port-heading">
+                        <h4 class="port-hide">The Photo Blaster</h4>
+                        <h5 class="port-hide">Branding and Design</h5>
+                    </div>
+                </div>
+                <div id="fifth" class="port-card">
+                    <h4>Another App</h4>
+                </div>
+                <div id="sixth" class="port-card">
+                    <img src="/img/photo-camera.png" class="port-logo" alt="camera logo" />
+                    <div class="port-heading">
+                        <h4 class="port-hide">My Photography</h4>
+                        <h5 class="port-hide">Various Photography Projects</h5>
+                    </div>
+                </div>
+                <div id="seventh" class="port-card">
+                    <h4>Another App</h4>
+                </div>
+            </div>
+            <!-- <div class="text">
                 <p class="animep">Design is</p>
                 <p class="animep">
                     <span class="word wisteria">beautiful.</span>
@@ -45,10 +91,16 @@
                     <span class="word green">essential.</span>
                     <span class="word midnight">everywhere.</span>
                 </p>
-            </div>
+            </div> -->
         </main>
 
         <footer class="footer">All content &#169; Dan Watson, 2018</footer>
+        <div class="port-hide">Icons made by
+            <a href="http://www.freepik.com" title="Freepik">Freepik</a> from
+            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
+            <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+                target="_blank">CC 3.0 BY</a>
+        </div>
     </div>
     <script src="dist/app.js"></script>
    </body>
