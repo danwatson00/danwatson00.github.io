@@ -1,0 +1,78 @@
+[
+    {   
+        "ID": "first", 
+        "title": "My Camera Bags",
+        "subtitle": "Organize Your Photography Gear",
+        "projectType": "Independent Capstone Project",
+        "brief": "My Camera Bags' mission is to organize the life of photographers, help them improve their photography skills, and help them earn a living with their photography equipment.",
+        "tech":["HTML5", "CSS3", "JavaScript", "SASS", "Browserify", "Grunt", "Git", "Bootstrap", "CSS Grid", "AJAX", "jQuery", "Firebase"],
+        "github": "https://github.com/danwatson00/my-camera-bag",
+        "url": "https://danwatson00.github.io/my-camera-bag/",
+        "designBrief": "https://docs.google.com/presentation/d/1uK3Kk6wwlbsaHiWcvdsoObaI_5hK41LWFHQtQmEpSgc/edit?usp=sharing",
+        "logo": "/img/my-camera-bags-logo.png",
+        "imageHome": "",
+        "image1": "",
+        "image2":""
+    },
+    {   
+        "ID": "second",
+        "title": "Boys and Girls Club Survey App",
+        "subtitle": "2018 Hack for the Community First Place Project",
+        "projectType": "36-hour Hack-a-thon Group Project",
+        "brief": "Before the Hack for the Community event, The Boys and Girls Club of Rutherford County only gave children that used their services one survey per year. They wanted a way to give children surveys more often and get the data in a more timely manner. We built a child-friendly web app using simple questions and emoji-style answers. The backend included indepth reporting the administrators could access anytime.",
+        "tech":["HTML5", "CSS3", "JavaScript", "SASS", "Browserify", "Grunt", "Git", "Bootstrap", "CSS Grid", "AJAX", "jQuery", "Firebase"],
+        "github": "https://github.com/danwatson00/my-camera-bag",
+        "url": "https://danwatson00.github.io/my-camera-bag/",
+        "designBrief": "https://app.zeplin.io/project/5acfa4c0e81dd68145af8f0f",
+        "logo": "/img/bgc-logo.png",
+        "imageHome": "boys_girls_club.png",
+        "image1": "/img/BGappDemo.mp4",
+        "image2": ""
+    },
+    {   
+        "ID": "third",
+        "title": "World Wide Travel",
+        "subtitle": "ReactJS Project",
+        "projectType": "Independent Project",
+        "brief": "The purpose of this project was to learn",
+        "tech":["React", "Reactstrap", "HTML5", "CSS3", "JavaScript", "Bootstrap", "CSS Grid"],
+        "github": "https://github.com/danwatson00/wide-world-travel",
+        "url": "https://danwatson00.github.io/wide-world-travel/",
+        "designBrief": "https://app.zeplin.io/project/5acfa4c0e81dd68145af8f0f",
+        "logo": "img/nss-logo.png",
+        "imageHome": "",
+        "image1": "",
+        "image2": ""
+    },
+    {
+        "ID": "fourth",
+        "title": "The Photo Blaster",
+        "subtitle": "The No Booth Photo Booth",
+        "projectType": "Professional Business Branding",
+        "brief": "The Photo Blaster is a business I own and created all of the marketing materials for, including printed assets and a SquareSpace website. The Photo Blaster uses modern technology like a touchscreen interface and text messaging through Twilio to allow users to send photos and animated gifs to themselves through the app.",
+        "tech":["React", "Reactstrap", "HTML5", "CSS3", "JavaScript", "Bootstrap", "CSS Grid"],
+        "github": "https://github.com/danwatson00/wide-world-travel",
+        "url": "https://danwatson00.github.io/wide-world-travel/",
+        "designBrief": "https://app.zeplin.io/project/5acfa4c0e81dd68145af8f0f",
+        "logo": "img/photo-blaster-logo.png",
+        "imageHome": "photo-blaster.jpg",
+        "image1": "",
+        "image2": ""
+    },
+    {
+        "ID": "fifth",
+        "title": "Watson Studios",
+        "subtitle": "Lifestyle and Commercial Photography",
+        "projectType": "Professional Business Branding",
+        "brief": "Watson Studios is a business I own and created all of the marketing materials for, including printed assets and a Good Gallery website. Watson Studios provides commercial photography to businesses and lifestyle portraiture to individual clients.",
+        "tech":["React", "Reactstrap", "HTML5", "CSS3", "JavaScript", "Bootstrap", "CSS Grid"],
+        "github": "https://github.com/danwatson00/wide-world-travel",
+        "url": "https://danwatson00.github.io/wide-world-travel/",
+        "designBrief": "https://app.zeplin.io/project/5acfa4c0e81dd68145af8f0f",
+        "logo": "img/photo-blaster-logo.png",
+        "imageHome": "photo-blaster.jpg",
+        "image1": "",
+        "image2": ""
+    }
+    
+]
