@@ -1,11 +1,23 @@
 "use strict";
+console.log("main here");
 // let portfolios = 'portfolios.js';
 let templates = require('./DOMBuilder'),
     db = require('./getData');
 
-$(document).on("click", "#001", function () {
-    db.loadProjectToDom("001");
+$(document).on("click", ".port-card", function () {
+    console.log("this id", this.id);
+    db.getItem(this.id)
+    .then((items) => {
+        items.forEach((item) => {
+            if (this.id === item.ID) {
+                console.log("if item", item);
+                templates.projectBuilder(item);
+            }
+        });
+    }); 
 });
+
+db.getItems();
 
 var rubber = $('h1').blast({ delimiter: 'character' });
 
@@ -25,7 +37,7 @@ $(".blast").mouseenter(function () {
 
 
 
-document.getElementById("first").addEventListener("click", loadProjectToDom);
+// document.getElementById("001").addEventListener("click", loadProjectToDom);
 
 // function loadCameraBag() {
 //     console.log("clicked");

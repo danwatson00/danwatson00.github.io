@@ -252,12 +252,19 @@
   height: 70px;
   width: 100%;
   flex-direction: row;
+  justify-content: space-between;
   flex-wrap: no-wrap; }
 
-/* remove bullets from nav list */
-nav ul li {
-  float: left;
+.nav {
+  align-self: right; }
+
+.nav ul {
+  display: inline-block;
   list-style-type: none; }
+
+/* remove bullets from nav list */
+ul li {
+  float: right; }
 
 #nav-logo {
   max-height: 100%;
@@ -2633,6 +2640,10 @@ nav ul li {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
+#about-img {
+  width: 50%;
+  margin: 5px; }
+
 /* to get sticky footer */
 html, body {
   height: 100%;
@@ -2641,7 +2652,9 @@ html, body {
 .container {
   position: relative;
   min-height: 100%;
-  padding: 0 0 60px 0; }
+  min-width: 100%;
+  padding: 0;
+  margin: 0; }
 
 /* Main content */
 main {
@@ -2652,5 +2665,11 @@ main {
 .socialIcon {
   height: 42px;
   border: 0; }
+
+h1 {
+  font-family: Roboto, Helvetica, sans-serif; }
+
+p {
+  font-family: Lato, Helvetica, sans-serif; }
 
 /*# sourceMappingURL=styles.css.map */

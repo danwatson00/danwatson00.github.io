@@ -1,8 +1,8 @@
 "use strict";
-
 // $ = require('jquery');
 
 function projectBuilder(item) {
+    console.log("projectBuilder Item", item);
     let projectCardDiv = 
             `<div>
                 <h1>${item.title}</h1>
