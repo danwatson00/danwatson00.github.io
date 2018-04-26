@@ -45,6 +45,9 @@
 
 /** Design is... Rotating text display on homepage **/
 /* Import Google Fonts */
+.nothing {
+  font-family: Lato, Helvetica, sans-serif; }
+
 .text {
   font-family: Lato, Helvetica, sans-serif;
   font-weight: 600;
@@ -102,6 +105,9 @@
 
 /* End Design Is... */
 /* Import Google Fonts */
+.nothing {
+  font-family: Lato, Helvetica, sans-serif; }
+
 /* Footer */
 .footer {
   position: absolute;
