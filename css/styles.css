@@ -1,340 +1,56 @@
-/* Blog Cards CSS */
-@import url("https://fonts.googleapis.com/css?family=Lato:light|Roboto");
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
-@import url("https://fonts.googleapis.com/css?family=Lato:light|Roboto");
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 900px; }
+/*
+Error: File to import not found or unreadable: animate.
+        on line 12 of ../scss/styles.scss
 
-.card {
-  flex: 0 1 calc(25% - 1em);
-  box-sizing: border-box;
-  max-height: 100%;
-  max-width: 100%;
-  margin: 1rem .25em;
-  padding: 15px;
-  border: 2px solid gray;
-  box-shadow: 2px 6px 12px 0 rgba(0, 0, 0, 0.4);
-  transition: 0.3s; }
+7: @import 'homePortGridImages';
+8: @import 'intro';
+9: @import 'mediaQueries';
+10: @import 'navBar';
+11: @import 'rubber';
+12: @import 'animate';
+13: @import 'aboutPage';
+14: 
+15: /* to get sticky footer *\/
+16: html, body {
+17:     height: 100%;
 
-.card:hover {
-  box-shadow: 4px 6px 15px 0 rgba(0, 0, 0, 0.5); }
-
-.card2 {
-  flex: 0 1 calc(25% - 1em);
-  background-image: url("https://danwatson00.github.io/img/coding-screen.jpg");
-  max-height: 100%;
-  max-width: 100%;
-  margin: 1rem .25em;
-  padding: 10px;
-  border: 2px solid black;
-  box-shadow: 6px 7px 31px -1px rgba(0, 0, 0, 0.75);
-  color: white;
-  background-position: 50% 50%; }
-
-.postImg {
-  max-height: 100%;
-  max-width: 100%; }
-
-.postImg2 {
-  object-fit: cover; }
-
-/** Design is... Rotating text display on homepage **/
-/* Import Google Fonts */
-.text {
-  font-family: Lato, Helvetica, sans-serif;
-  font-weight: 600;
-  font-size: 40px;
-  position: absolute;
-  width: 500px;
-  left: 50%;
-  margin-left: -200px;
-  height: 40px;
-  top: 40%;
-  margin-top: -20px; }
-
-.animep {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0; }
-
-.word {
-  position: absolute;
-  width: 250px;
-  opacity: 0; }
-
-.letter {
-  display: inline-block;
-  position: relative;
-  /* float: left; */
-  transform: translateZ(25px);
-  transform-origin: 50% 50% 25px; }
-
-.letter.out {
-  transform: rotateX(90deg);
-  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
-
-.letter.behind {
-  transform: rotateX(-90deg); }
-
-.letter.in {
-  transform: rotateX(0deg);
-  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-
-.wisteria {
-  color: #8e44ad; }
-
-.belize {
-  color: #2980b9; }
-
-.pomegranate {
-  color: #c0392b; }
-
-.green {
-  color: #16a085; }
-
-.midnight {
-  color: #2c3e50; }
-
-/* End Design Is... */
-/* Import Google Fonts */
-/* Footer */
-.footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center; }
-
-#portfolio-div {
-  margin: 0 auto;
-  display: grid;
-  color: white;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "first first first second" "first first first third" "fourth fifth fifth fifth" "sixth fifth fifth fifth";
-  grid-column-gap: 10px;
-  grid-row-gap: 10px; }
-
-.port-card {
-  text-align: center;
-  border: 1px solid #333;
-  min-height: 200px;
-  min-width: 300px;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  justify-content: stretch;
-  /* align horizontal */ }
-
-.port-heading {
-  background: rgba(70, 70, 70, 0.7);
-  opacity: 0;
-  grid-row: 2;
-  width: 100%;
-  -webkit-transition: opacity 0.8s;
-  /* Safari */
-  transition: opacity .8s;
-  margin: 0 0; }
-
-.port-card:hover .port-heading {
-  opacity: 1; }
-
-.port-card:hover .port-logo {
-  width: 45%; }
-
-.port-logo {
-  margin: auto;
-  grid-row: 1;
-  width: 40%;
-  vertical-align: middle;
-  -webkit-transition: width .8s;
-  /* Safari */
-  transition: width .8s; }
-
-.port-card h4 {
-  position: relative;
-  font-size: 1em;
-  vertical-align: bottom;
-  margin: 5px 0; }
-
-.port-card h5 {
-  position: relative;
-  font-size: 0.7em;
-  vertical-align: bottom;
-  margin: 5px 0; }
-
-#first {
-  background: linear-gradient(rgba(70, 70, 70, 0.5), rgba(70, 70, 70, 0.5)), url("/img/my-camera-bag-screen.png") no-repeat center;
-  background-size: cover;
-  grid-area: first; }
-
-#second {
-  background: linear-gradient(rgba(70, 70, 70, 0.5), rgba(70, 70, 70, 0.5)), url("/img/boys_girls_club.png") no-repeat center;
-  background-size: cover;
-  grid-area: second; }
-
-#third {
-  background: url("/img/boys_girls_club.png") no-repeat center;
-  background-size: cover;
-  grid-area: third; }
-
-#fourth {
-  background: url("/img/photo_blaster_2.jpg") no-repeat center;
-  background-size: cover;
-  grid-area: fourth; }
-
-#fifth {
-  background: url("/img/coding-screen.jpg") no-repeat center;
-  background-size: cover;
-  grid-area: fifth; }
-
-#sixth {
-  background: linear-gradient(rgba(70, 70, 70, 0.5), rgba(70, 70, 70, 0.5)), url("/img/danwatson01.jpg") no-repeat center;
-  background-size: cover;
-  grid-area: sixth; }
-
-#hi {
-  font-size: 3em;
-  margin: 0.25em 0;
-  font-family: Roboto, Helvetica, sans-serif; }
-
-#hi-follow {
-  font-size: 3em;
-  margin: 0.25em 0;
-  font-family: Roboto, Helvetica, sans-serif; }
-
-/* Media Queries */
-@media screen and (min-width: 40em) {
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-
-  .card {
-    flex: 0 1 calc(25% - 1em); } }
-@media screen and (min-width: 40em) and (min-width: 60em) {
-  .cards {
-    flex: 0 1 calc(25% - 1em); }
-
-  .card {
-    flex: 0 1 calc(50% - 1em); } }
-@media screen and (min-width: 40em) {
-  /* @media screen and (min-width: 52em) {
-      .centered {
-          
-      } */ }
-#navbar {
-  display: flex;
-  height: 70px;
-  width: 100%;
-  flex-direction: row;
-  flex-wrap: no-wrap; }
-
-/* remove bullets from nav list */
-nav ul li {
-  float: left;
-  list-style-type: none; }
-
-#nav-logo {
-  max-height: 100%;
-  max-width: 100%; }
-
-/* unvisited link */
-.nav a:link {
-  color: black;
-  padding: 5px 20px 23px 10px;
-  text-decoration: none; }
-
-/* visited link */
-.nav a:visited {
-  color: #302f2f; }
-
-/* mouse over link */
-.nav a:hover {
-  color: #f30404;
-  transition: color 0.5s ease; }
-
-/* selected link */
-.nav a:active {
-  color: yellow; }
-
-/* Rubberband Text */
-.rubberBand {
-  -webkit-animation-name: rubberBand;
-  animation-name: rubberBand;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
-@-webkit-keyframes rubberBand {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); }
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1); }
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1); }
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1); }
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1); }
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1); }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); } }
-@keyframes rubberBand {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); }
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1); }
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1); }
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1); }
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1); }
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1); }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1); } }
-/* to get sticky footer */
-html, body {
-  height: 100%;
-  color: #333; }
-
-.container {
-  position: relative;
-  min-height: 100%;
-  padding: 0 0 60px 0; }
-
-/* Main content */
-main {
-  margin: 80px 20px 0 20px;
-  /* Add a top margin to avoid content overlay */ }
-
-/* Social Icons on Contact Page */
-.socialIcon {
-  height: 42px;
-  border: 0; }
-
-/*# sourceMappingURL=styles.css.map */
+Backtrace:
+../scss/styles.scss:12
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/tree/import_node.rb:44:in `import'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/tree/import_node.rb:28:in `imported_file'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/tree/import_node.rb:37:in `css_import?'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:391:in `run'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/exec/base.rb:52:in `parse'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/lib/sass/exec/base.rb:19:in `parse!'
+/usr/local/lib/ruby/gems/2.5.0/gems/sass-3.5.5/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: animate.\A         on line 12 of ../scss/styles.scss\A \A 7: @import 'homePortGridImages';\A 8: @import 'intro';\A 9: @import 'mediaQueries';\A 10: @import 'navBar';\A 11: @import 'rubber';\A 12: @import 'animate';\A 13: @import 'aboutPage';\A 14: \A 15: /* to get sticky footer */\A 16: html, body {\A 17:     height: 100%;"; }
