@@ -7,10 +7,27 @@
 
 #hi-follow {
     font-size: 3em;
-    margin: 0.25em 0;
+    margin-top: 0.25em;
     font-family: $font2;
+    margin-bottom: 2em;
+
+}
+.slideInLeft#hi {
+    animation-duration: 2s;
 }
 
-// .blast {
+.slideInRight#hi-follow {
+    animation-duration: 2s;
+}
 
-// }
+.blast {
+animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+.blast:hover {
+    -webkit-animation-name: rubberBand 1s;
+    animation-name: rubberBand 1s;
+    color: $red; 
+}

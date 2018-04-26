@@ -4,13 +4,24 @@
    height: 70px;
    width: 100%;
    flex-direction: row;
+   justify-content: space-between;
    flex-wrap: no-wrap;
 }
 
-/* remove bullets from nav list */
-nav ul li {
-  float: left;
+.nav {
+  align-self: right;
+}
+
+.nav ul {
+  display: inline-block;
   list-style-type: none;
+}
+
+/* remove bullets from nav list */
+ul li {
+  float: right;
+  // list-style-type: none;
+  // display: inline-block;
 }
 
 #nav-logo {
