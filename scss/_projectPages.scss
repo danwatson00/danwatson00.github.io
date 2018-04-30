@@ -1,0 +1,25 @@
+.project-img {
+    border: 1px solid $black;
+    width: 100%;
+}
+
+.proj-div {
+    margin-top: 3em;
+}
+
+.proj-links {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+}
+
+.proj-link-icon {
+    max-width: 100px;
+}
+
+.proj-link-obj {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
