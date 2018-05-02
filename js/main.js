@@ -1,16 +1,14 @@
 "use strict";
-console.log("main here");
+
 // let portfolios = 'portfolios.js';
 let templates = require('./DOMBuilder'),
     db = require('./getData');
 
 $(document).on("click", ".port-card", function () {
-    console.log("this id", this.id);
     db.getItem(this.id)
     .then((items) => {
         items.forEach((item) => {
             if (this.id === item.ID) {
-                console.log("if item", item);
                 templates.projectBuilder(item);
             }
         });
@@ -35,20 +33,6 @@ $(".blast").mouseenter(function () {
 
 });
 
-
-
-// document.getElementById("001").addEventListener("click", loadProjectToDom);
-
-// function loadCameraBag() {
-//     console.log("clicked");
-// }
-
-
-// $("main").html(loadCameraBag);
-
-// function printToDOM() {
-//     document.getElementById(body).inner
-// }
 
 
 //LOAD USER ITEMS TO DOM

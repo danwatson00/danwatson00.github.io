@@ -6,8 +6,8 @@ function projectBuilder(item) {
     let projectCardDiv = 
             `<div>
                 <div class="proj-div">
-                    <h1>${item.title}</h1><h2>${item.subtitle}</h1>
-                    <h2>${item.projectType}</h2>
+                    <h1>${item.title}</h1>
+                    <h2>${item.subtitle}</h2>
                 </div>
                 <div class="proj-div">
                     <h3>About This Project</h3>

@@ -2667,12 +2667,33 @@ ul li {
   flex-direction: column;
   text-align: center; }
 
+input {
+  margin-bottom: 1.5em; }
+
+#messageInput-div {
+  float: right; }
+
+#form-submit-btn {
+  margin-top: 10px; }
+
+label {
+  margin-bottom: 1px; }
+
+/* Social Icons on Contact Page */
+.socialIcon {
+  margin: 15px;
+  width: 50px;
+  border: 0; }
+
+.socialIcon:hover {
+  width: 65px; }
+
 /* to get sticky footer */
 html, body {
   height: 100%;
   color: #333; }
 
-.container {
+.body-container {
   position: relative;
   min-height: 100%;
   min-width: 100%;
@@ -2691,11 +2712,6 @@ main {
   -webkit-box-align: center;
   align-items: center;
   flex-direction: column; }
-
-/* Social Icons on Contact Page */
-.socialIcon {
-  height: 42px;
-  border: 0; }
 
 h1 {
   font-family: Roboto, Helvetica, sans-serif; }
