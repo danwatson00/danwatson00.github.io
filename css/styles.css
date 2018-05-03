@@ -1,8 +1,8 @@
 /* Blog Cards CSS */
 @import url("https://fonts.googleapis.com/css?family=Lato:light|Roboto");
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+@import url("https://use.typekit.net/imq5hqd.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:light|Roboto");
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+@import url("https://use.typekit.net/imq5hqd.css");
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -2643,15 +2643,13 @@ ul li {
   animation-name: slideOutUp; }
 
 #about-img {
-  width: 50%;
-  margin: 5px; }
+  width: 30%;
+  margin: 5px;
+  float: right; }
 
 .project-img {
   border: 1px solid #333;
   width: 100%; }
-
-.proj-div {
-  margin-top: 3em; }
 
 .proj-links {
   display: flex;
@@ -2688,6 +2686,9 @@ label {
 .socialIcon:hover {
   width: 65px; }
 
+#resume-header {
+  border-bottom: 2px solid black; }
+
 /* to get sticky footer */
 html, body {
   height: 100%;
@@ -2703,7 +2704,7 @@ html, body {
 /* Main content */
 main {
   max-width: 950px;
-  margin: 0 auto;
+  margin: 0 1em;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -2718,5 +2719,8 @@ h1 {
 
 p {
   font-family: Lato, Helvetica, sans-serif; }
+
+.proj-div {
+  margin-top: 2em; }
 
 /*# sourceMappingURL=styles.css.map */
