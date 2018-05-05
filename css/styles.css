@@ -2704,7 +2704,8 @@ html, body {
 /* Main content */
 main {
   max-width: 950px;
-  margin: 0 1em;
+  margin: 0 auto;
+  padding: 2em;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
