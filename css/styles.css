@@ -105,13 +105,16 @@
 /* Footer */
 .footer {
   position: relative;
-  height: 80px;
+  height: 150px;
   right: 0;
   bottom: 0;
   left: 0;
   margin-top: 80px;
   background-color: #efefef;
   text-align: center; }
+
+#footer-info-div {
+  padding-top: 50px; }
 
 #portfolio-div {
   margin: 0 auto;
@@ -270,7 +273,8 @@ ul li {
 
 #nav-logo {
   max-height: 100%;
-  max-width: 100%; }
+  max-width: 100%;
+  margin: 10px; }
 
 /* unvisited link */
 .nav a:link {
@@ -2649,7 +2653,8 @@ ul li {
 
 .project-img {
   border: 1px solid #333;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 1em; }
 
 .proj-links {
   display: flex;
@@ -2682,9 +2687,6 @@ label {
   margin: 15px;
   width: 50px;
   border: 0; }
-
-.socialIcon:hover {
-  width: 65px; }
 
 #resume-header {
   border-bottom: 2px solid black; }
