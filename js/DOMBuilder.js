@@ -20,6 +20,7 @@ function projectBuilder(item) {
                 <div class="proj-div">
                     <h3>Screenshots</h3>
                     <img src="${item.imageHome}" class="project-img" alt="website sample image" />
+                    <img src="${item.image1}" class="project-img" alt="a second website sample image" />
                 </div>
                 <div class="proj-div">
                     <h3>Project Links</h3>
