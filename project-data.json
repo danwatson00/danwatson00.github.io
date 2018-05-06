@@ -34,7 +34,7 @@
         "title": "WakeUp Personal Dashboard",
         "subtitle": "React Web App",
         "projectType": "Group Project",
-        "brief": "Our group of four was tasked with creating a personal dashboard app in three days. We chose to design the app as mobile first, because the dashboard is meant to be viewed on the go. With the tight deadline, we had to prioritize our MVP (minimum viable product) and done as much as possible. As a part of the group, I was in charge of creating the collapsible containers that would hold the news and weather. I was also responsible for getting the data from the weather api using FETCH. It was a great project to work on to learn how to use Reactstrap and FETCH with React. What wasn't completed as a group, I intend to continue on my own, so check back for updates soon.",
+        "brief": "Our group of four was tasked with creating a personal dashboard app in three days. We chose to design the app as mobile first, because the dashboard is meant to be viewed on the go. With the tight deadline, we had to prioritize our MVP (minimum viable product) and done as much as possible. As a part of the group, I was in charge of creating the collapsible containers that would hold the news and weather. I was also responsible for getting the data from the weather api using FETCH. I helped with the Google Authorization via Firebase. It was a great project to work on to learn how to use Reactstrap and FETCH with React. What wasn't completed as a group, I intend to continue on my own, so check back for updates soon.",
         "tech": "React, Reactstrap, JavaScript, HTML5, CSS3, AdobeXD, API Calls",
         "github": "https://github.com/danwatson00/wake-up",
         "url": "https://www.watson-studios.com",
