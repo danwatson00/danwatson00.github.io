@@ -29,19 +29,19 @@
         "image1": "/img/boys_girls_club.jpg",
         "image2": ""
     },
-    {   
+    {
         "ID": "third",
-        "title": "World Wide Travel",
-        "subtitle": "ReactJS Project",
-        "projectType": "Independent Project",
-        "brief": "The purpose of this project was to learn the React framework. I learned how to use react components and props, as well as how state works. I'm impressed with how fast and responsive React is. I have also started compiling a library of my own React components and I look forward to putting those to use in the future.",
-        "tech": "React, Reactstrap, HTML5, CSS3, JavaScript, Bootstrap, CSS Grid, Adobe Photoshop, Adobe Illustrator",
-        "github": "https://github.com/danwatson00/wide-world-travel",
-        "url": "",
-        "designBrief": "",
-        "logo": "img/nss-logo.png",
-        "imageHome": "",
-        "image1": "",
+        "title": "WakeUp Personal Dashboard",
+        "subtitle": "React Web App",
+        "projectType": "Group Project",
+        "brief": "Our group of four was tasked with creating a personal dashboard app in three days. We chose to design the app as mobile first, because the dashboard is meant to be viewed on the go. With the tight deadline, we had to prioritize our MVP (minimum viable product) and done as much as possible. As a part of the group, I was in charge of creating the collapsible containers that would hold the news and weather. I was also responsible for getting the data from the weather api using FETCH. It was a great project to work on to learn how to use Reactstrap and FETCH with React. What wasn't completed as a group, I intend to continue on my own, so check back for updates soon.",
+        "tech": "React, Reactstrap, JavaScript, HTML5, CSS3, AdobeXD, API Calls",
+        "github": "https://github.com/danwatson00/wake-up",
+        "url": "https://www.watson-studios.com",
+        "designBrief": "https://danwatson00.github.io/wake-up/",
+        "logo": "/img/wakeup-logo.png",
+        "imageHome": "/img/wakeup-03.jpg",
+        "image1": "/img/wakeup-01.jpg",
         "image2": ""
     },
     {
@@ -60,7 +60,7 @@
         "image2": ""
     },
     {
-        "ID": "fifth",
+        "ID": "",
         "title": "Watson Studios",
         "subtitle": "Lifestyle and Commercial Photography",
         "projectType": "Professional Business Branding",
@@ -75,19 +75,20 @@
         "image2": ""
     },
     {
-        "ID": "sixth",
-        "title": "WakeUp Personal Dashboard",
-        "subtitle": "React Web App",
-        "projectType": "Group Project",
-        "brief": "Our group of four was tasked with creating a personal dashboard app in three days. We chose to design the app as mobile first, because the dashboard is meant to be viewed on the go. With the tight deadline, we had to prioritize our MVP (minimum viable product) and done as much as possible. As a part of the group, I was in charge of creating the collapsible containers that would hold the news and weather. I was also responsible for getting the data from the weather api using FETCH. It was a great project to work on to learn how to use Reactstrap and FETCH with React. What wasn't completed as a group, I intend to continue on my own, so check back for updates soon.",
-        "tech": "React, Reactstrap, JavaScript, HTML5, CSS3, AdobeXD, API Calls",
-        "github": "https://github.com/danwatson00/wake-up",
-        "url": "https://www.watson-studios.com",
-        "designBrief": "https://danwatson00.github.io/wake-up/",
-        "logo": "",
-        "imageHome": "/img/watson-studios-01.jpg",
-        "image1": "/img/watson-studios-02.jpg",
+        "ID": "seventh",
+        "title": "World Wide Travel",
+        "subtitle": "ReactJS Project",
+        "projectType": "Independent Project",
+        "brief": "The purpose of this project was to learn the React framework. I learned how to use react components and props, as well as how state works. I'm impressed with how fast and responsive React is. I have also started compiling a library of my own React components and I look forward to putting those to use in the future.",
+        "tech": "React, Reactstrap, HTML5, CSS3, JavaScript, Bootstrap, CSS Grid, Adobe Photoshop, Adobe Illustrator",
+        "github": "https://github.com/danwatson00/wide-world-travel",
+        "url": "",
+        "designBrief": "",
+        "logo": "img/wide-world-logo.png",
+        "imageHome": "img/wide-world-travel-01.jpg",
+        "image1": "img/wide-world-travel-02.jpg",
         "image2": ""
     }
+    
     
 ]
