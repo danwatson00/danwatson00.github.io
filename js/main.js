@@ -45,6 +45,18 @@ function loadProjectToDom(ID) {
         });
 }
 
+$(function () {
+    $("div.port-card").bind("tap", tapHandler);
+
+    function tapHandler(ID) {
+        db.getItem(ID)
+            .then((result) => {
+                console.log("result", result);
+                templates.projectBuilder(result);
+    }
+);
+}
+});
 
 // let blogPosts = require("./fetch-blog"),
 //     blast = require("./blast-text"),
