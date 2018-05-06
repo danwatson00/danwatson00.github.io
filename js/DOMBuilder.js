@@ -42,7 +42,6 @@ function projectBuilder(item) {
             </div>`;
 
         $("main").html(projectCardDiv);
-    // document.getElementById("main").innerHTML = projectCardDiv;
 }
 
 

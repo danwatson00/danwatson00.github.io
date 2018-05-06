@@ -44,6 +44,7 @@
     transition: width .8s;
 }
 
+.port-text-log
 // .port-logo-lg {
 
 // }
@@ -73,10 +74,11 @@
             rgba(70, 70, 70, 0.5),
             rgba(70, 70, 70, 0.5)
         ),
-        url("/img/my-camera-bag-screen.png") no-repeat center;
+        url("/img/my-camera-bag-screen.jpg") no-repeat center;
     background-size: cover;
     grid-area: first;
 }
+
 
 #second {
     background: linear-gradient(
@@ -88,23 +90,39 @@
     grid-area: second;
 }
 
+
 #third {
-    background: url("/img/boys_girls_club.png") no-repeat center;
+    background: linear-gradient(
+            rgba(70, 70, 70, 0.5),
+            rgba(70, 70, 70, 0.5)
+        ),
+        url("/img/wakeup-01.jpg") no-repeat center;
     background-size: cover;
     grid-area: third;
 }
 
+
 #fourth {
-    background: url("/img/photo_blaster_2.jpg") no-repeat center;
+    background: linear-gradient(
+            rgba(70, 70, 70, 0.5),
+            rgba(70, 70, 70, 0.5)
+        ),
+        url("/img/photo_blaster_2.jpg") no-repeat center;
     background-size: cover;
     grid-area: fourth;
 }
 
+
 #fifth {
-    background: url("/img/coding-screen.jpg") no-repeat center;
+    background: linear-gradient(
+            rgba(70, 70, 70, 0.5),
+            rgba(70, 70, 70, 0.5)
+        ),
+        url("/img/coding-screen.jpg") no-repeat center;
     background-size: cover;
     grid-area: fifth;
 }
+
 
 #sixth {
     background: linear-gradient(
@@ -116,3 +134,13 @@
     grid-area: sixth;
 }
 
+
+#seventh {
+    background: linear-gradient(
+            rgba(70, 70, 70, 0.5),
+            rgba(70, 70, 70, 0.5)
+        ),
+        url("/img/wide-world-travel-01.jpg") no-repeat center;
+    background-size: cover;
+    grid-area: seventh;
+}
