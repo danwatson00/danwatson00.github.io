@@ -210,12 +210,14 @@
 #intro {
   align-self: left !important; }
 
+#hi {
+  margin-bottom: 0; }
+
 #hi, #hi-follow {
   font-size: 3em;
   font-family: Roboto, Helvetica, sans-serif; }
 
 #hi-follow {
-  margin-top: 0.25em;
   margin-bottom: 1em; }
 
 .slideInLeft#hi {
