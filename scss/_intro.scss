@@ -1,14 +1,15 @@
 
-#hi {
+#intro {
+    align-self: left !important;
+}
+
+#hi, #hi-follow {
     font-size: 3em;
-    margin-top: 1em;
     font-family: $font2;
 }
 
 #hi-follow {
-    font-size: 3em;
     margin-top: 0.25em;
-    font-family: $font2;
     margin-bottom: 1em;
 
 }
@@ -27,7 +28,33 @@ animation-duration: 2s;
 }
 
 .blast:hover {
-    -webkit-animation-name: rubberBand 1s;
-    animation-name: rubberBand 1s;
+    -webkit-animation-name: rubberBand 1s !important;
+    animation-name: rubberBand 1s !important;
     color: $red; 
 }
+
+// #intro {
+//     -moz-animation: cssAnimation 0s ease-in 8s forwards;
+//     /* Firefox */
+//     -webkit-animation: cssAnimation 0s ease-in 8s forwards;
+//     /* Safari and Chrome */
+//     -o-animation: cssAnimation 0s ease-in 8s forwards;
+//     /* Opera */
+//     animation: cssAnimation 0s ease-in 8s forwards;
+//     -webkit-animation-fill-mode: forwards;
+//     animation-fill-mode: forwards;
+// }
+// @keyframes cssAnimation {
+//     to {
+//         width:0;
+//         height:0;
+//         overflow:hidden;
+//     }
+// }
+// @-webkit-keyframes cssAnimation {
+//     to {
+//         width:0;
+//         height:0;
+//         visibility:hidden;
+//     }
+// }
