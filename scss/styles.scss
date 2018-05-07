@@ -1,0 +1,64 @@
+@import 'blogCards';
+@import 'colors';
+@import 'designIs';
+@import 'fonts';
+@import 'footer';
+@import 'homePortGrid';
+@import 'homePortGridImages';
+@import 'intro';
+@import 'mediaQueries';
+@import 'navBar';
+@import 'rubber';
+@import 'animate';
+@import 'aboutPage';
+@import 'projectPages';
+@import 'contactForm';
+@import 'socialIcons';
+@import 'resume';
+@import 'links';
+@import 'modal';
+@import 'hamburger';
+
+/* to get sticky footer */
+html, body {
+    height: 100%;
+    color: $black;
+}
+
+.body-container {
+    position: relative;
+    min-height: 100%;
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+/* Main content */
+main {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 2em;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: $font2;
+}
+
+
+p {
+    font-family: $font1;
+}
+
+.proj-div {
+    margin-top: 2em;
+}
+
