@@ -1,16 +1,51 @@
 /* Media Queries */
 
 @media only screen and (max-width: 700px) {
+    #hamburger-img {
+        display: inline !important;
+        flex-grow: 1;
+        margin: 10px;
+        margin-left: 15px;
+        flex-basis: 15%;
+    }
+
+    #navbar {
+        height: 50px;
+        align-items: center;
+        align-content: center;
+
+    }
+
+    #nav-logo {
+        flex-basis: 80%;
+    }
+
+    // #nav-logo-link {
+    //     flex-basis: 80%;
+    //     margin-top: 10px;
+    //     margin-bottom: 10px;
+    // }
+
     #portfolio-div {
         grid-template-columns: 1fr;
         grid-template-areas:
                 "first"
                 "second"
                 "third"
+                "seventh"
                 "fourth"
                 "fifth"
-                "sixth"
-                "seventh";
+                "sixth";
+    }
+    
+    #main-nav {
+        display: none;
+    }
+
+    #hi, #hi-follow {
+        font-size: 1.5em;
+        font-family: $font2;
+        text-align: left;
     }
 }
 

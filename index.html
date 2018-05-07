@@ -20,11 +20,30 @@
     <div class="body-container">
 
         <header>
+
             <div id="navbar">
-                <a href="index.html"><img src="img/dw-logo1.png" id="nav-logo" alt="Dan Watson logo"></a>
-                <ul class="nav">
-                    <!-- <li><a href="index.html">HOME</a></li> -->
-                    <li><a href="index.html">PORTFOLIO</a></li>
+                <a href="index.html" id="nav-logo-link" ><img src="img/dw-logo1.png" id="nav-logo" alt="Dan Watson logo"></a>
+                <div id="hamburger" class="dropleft">
+                    <img id="hamburger-img" src="img/hamburger.png" class="dropdown-toggle" id="dropdownMenuButton" alt="hamburger menu icon" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a href="#" class="dropdown-item">PORTFOLIO</a>
+                        <a href="/about.html" class="dropdown-item">ABOUT</a>
+                        <a href="/resume.html" class="dropdown-item">RESUME</a>
+                        <a href="/contact.html" class="dropdown-item">CONTACT</a>
+                    </div>
+                </div>
+                <ul class="nav" id="main-nav">
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" id="projectsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PORTFOLIO</a>
+                        <div class="dropdown-menu" aria-labelledby="projectsDropdown">
+                            <a class="dropdown-item first">MY CAMERA BAGS</a>
+                            <a class="dropdown-item second">HACK FOR THE COMMUNITY</a>
+                            <a class="dropdown-item">WAKE/UP</a>
+                            <a class="dropdown-item">WIDE WORLD TRAVEL</a>
+                            <a class="dropdown-item">THE PHOTO BLASTER</a>
+                        </div>
+                    </li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="DAN_WATSON_RESUME.pdf" target="_blank">RESUME</a></li>
                     <!-- <li><a href="resume.html">RESUME</a></li> -->
@@ -114,7 +133,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        We will be adding changes to this project soon. Please check back for updates.
+                        I will be adding changes to this project soon. Please check back for updates.
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -145,6 +164,7 @@
         </footer>
     </div>
     <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/velocity-animate@1.5/velocity.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/velocity-animate@1.5/velocity.ui.min.js"></script>
     <script src="/lib/node_modules/jquery/dist/jquery.js"></script>

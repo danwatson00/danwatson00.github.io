@@ -37,7 +37,7 @@
         "brief": "Our group of four was tasked with creating a personal dashboard app in three days. We chose to design the app as mobile first, because the dashboard is meant to be viewed on the go. With the tight deadline, we had to prioritize our MVP (minimum viable product) and done as much as possible. As a part of the group, I was in charge of creating the collapsible containers that would hold the news and weather. I was also responsible for getting the data from the weather api using FETCH. I helped with the Google Authorization via Firebase. It was a great project to work on to learn how to use Reactstrap and FETCH with React. What wasn't completed as a group, I intend to continue on my own, so check back for updates soon.",
         "tech": "React, Reactstrap, JavaScript, HTML5, CSS3, AdobeXD, API Calls",
         "github": "https://github.com/danwatson00/wake-up",
-        "url": "https://www.watson-studios.com",
+        "url": "https://danwatson00.github.io/wake-up/",
         "designBrief": "https://danwatson00.github.io/wake-up/",
         "logo": "/img/wakeup-logo.png",
         "imageHome": "/img/wakeup-03.jpg",
@@ -87,6 +87,21 @@
         "logo": "img/wide-world-logo.png",
         "imageHome": "img/wide-world-travel-01.jpg",
         "image1": "img/wide-world-travel-02.jpg",
+        "image2": ""
+    },
+    {
+        "ID": "",
+        "title": "Number Guessing Game",
+        "subtitle": "Javascript Exercise",
+        "projectType": "Independent Project",
+        "brief": "The purpose of this project was to learn more about JavaScript.",
+        "tech": "HTML5, CSS3, JavaScript, Bootstrap",
+        "github": "https://github.com/danwatson00/wide-world-travel",
+        "url": "",
+        "designBrief": "",
+        "logo": "img/",
+        "imageHome": "img/",
+        "image1": "img/",
         "image2": ""
     }
     
