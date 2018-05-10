@@ -27,7 +27,7 @@ function projectBuilder(item) {
                     <h3>Project Links</h3>
                     <div class="proj-links">
                         <div class="proj-link-obj">
-                            <a href="${item.github}" class="proj-link" target="_blank"><img src="/img/github.png" class="proj-link-icon"/></a>
+                            <a href="${item.github}" class="proj-link" target="_blank"><img src="/img/github-01.png" class="proj-link-icon"/></a>
                             <a  href="${item.github}">Github Repo</a>
                         </div>
                         <div class="proj-link-obj">
