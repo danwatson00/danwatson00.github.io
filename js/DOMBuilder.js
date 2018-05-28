@@ -1,7 +1,7 @@
 "use strict";
 // $ = require('jquery');
 
-function projectBuilder(item) {
+function projectBuilder(item, index) {
     console.log("projectBuilder Item", item);
     let projectCardDiv = 
             `<div>
@@ -19,8 +19,11 @@ function projectBuilder(item) {
                 </div>
                 <div class="proj-div">
                     <h3>Screenshots</h3>
-                    <img src="${item.imageHome}" class="project-img" alt="website sample image" />
-                    <img src="${item.image1}" class="project-img" alt="a second website sample image" />
+                    <img class="project-img" src="${item.image01}" alt="website sample image">
+                    <img class="project-img" src="${item.image02}" alt="website sample image">
+                    <img class="project-img" src="${item.image03}" alt="website sample image">
+                    <img class="project-img" src="${item.image04}" alt="website sample image">
+                    <img class="project-img" src="${item.image05}" alt="website sample image">
                 </div>
                 <div class="proj-div">
                     <h3>Project Links</h3>
