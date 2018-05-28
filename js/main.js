@@ -57,10 +57,8 @@ window.onpopstate = function (item) {
 
 
 $(document).on("click", ".dropdown-item", function () {
-    console.log("drop clicked", this.id);
-    db.getDropdownItem(this.id)
+    db.getItem(this.id)
     .then((items) => {
-        console.log("then items", items);
         items.forEach((item) => {
             let str = this.id.substring(0, this.id.length - 1);
             if (str === item.ID) {
@@ -68,7 +66,6 @@ $(document).on("click", ".dropdown-item", function () {
             }
         });
     });
-
 });
 
 
