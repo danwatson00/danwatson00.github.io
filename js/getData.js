@@ -19,7 +19,15 @@ function getItem(ID) {
         } 
         
     );
-    
 }
 
-module.exports = { getItems, getItem };
+function getDropdownItem(id) {
+    return $.ajax({
+        url: `./project-data.json`
+    }).done((items) => {
+        return items;
+        }
+    );
+}
+
+module.exports = { getItems, getItem, getDropdownItem };

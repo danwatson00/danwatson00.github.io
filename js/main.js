@@ -43,17 +43,35 @@ $(document).on("click", ".port-card", function () {
             image03: item.image03,
             image04: item.image04,
             image05: item.image05
-        }, null, item.ID);
+        }, item.title, item.ID);
     });
 });
 
 window.onpopstate = function (item) {
-    var content = "";
+    let content = "";
     if (item.state) {
         content = item.state.project;
     }
     templates.projectBuilder(content);
 };
+
+
+$(document).on("click", ".dropdown-item", function () {
+    console.log("drop clicked", this.id);
+    db.getDropdownItem(this.id)
+    .then((items) => {
+        console.log("then items", items);
+        items.forEach((item) => {
+            let str = this.id.substring(0, this.id.length - 1);
+            if (str === item.ID) {
+                templates.projectBuilder(item);
+            }
+        });
+    });
+
+});
+
+
 
 // $(document).on("click", ".port-card", function () {
 //     console.log("clicked");

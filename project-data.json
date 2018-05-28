@@ -27,7 +27,7 @@
         "url": "https://danwatson00.github.io/boys-and-girls-h4tc/",
         "designBrief": "https://app.zeplin.io/project/5acfa4c0e81dd68145af8f0f",
         "logo": "/img/bgc-logo.png",
-        "image01":"/img/bgc-01.jpg", 
+        "image01": "/img/bgc-01.jpg", 
         "image02": "/img/bgc-02.jpg",
         "image03": "/img/bgc-03.jpg",
         "image04": "/img/bgc-04.jpg",
@@ -45,9 +45,11 @@
         "url": "https://danwatson00.github.io/wake-up/",
         "designBrief": "https://danwatson00.github.io/wake-up/",
         "logo": "/img/wakeup-logo.png",
-        "imageHome": "/img/wakeup-03.jpg",
-        "image1": "/img/wakeup-01.jpg",
-        "image2": ""
+        "image01": "/img/wakeup-01.jpg",
+        "image02": "/img/wakeup-02.jpg",
+        "image03": "/img/wakeup-03.jpg",
+        "image04": "/img/wakeup-04.jpg",
+        "image05": "/img/wakeup-05.jpg"
     },
     {
         "ID": "fourth",
@@ -92,9 +94,11 @@
         "url": "",
         "designBrief": "",
         "logo": "img/wide-world-logo.png",
-        "imageHome": "img/wide-world-travel-01.jpg",
-        "image1": "img/wide-world-travel-02.jpg",
-        "image2": ""
+        "image01": "/img/wide-world-travel-01.jpg",
+        "image02": "/img/wide-world-travel-02.jpg",
+        "image03": "/img/wide-world-travel-03.jpg",
+        "image04": "/img/wide-world-travel-04.jpg",
+        "image05": "/img/wide-world-travel-05.jpg"
     },
     {
         "ID": "",
