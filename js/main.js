@@ -5,44 +5,80 @@ let templates = require('./DOMBuilder'),
     db = require('./getData');
 
 
-function selectProject(items) {
-    items.forEach((item) => {
-        console.log("items", items);
-        console.log("this.id", this.id);
-    if (this.id === item.ID) {
-        templates.projectBuilder(item);
-    }
-    });
-}
-
+// function selectProject(items) {
+//     items.forEach((item) => {
+//         console.log("items", items);
+//         console.log("this.id", this.id);
+//     if (this.id === item.ID) {
+//         templates.projectBuilder(item);
+//     }
+//     });
+// }
+db.getItems();
 
 
 $(document).on("click", ".port-card", function () {
     db.getItem(this.id)
     .then((items) => {
-        // items.forEach((item) => {
-        //     if (this.id === item.ID) {
-        //         let data = templates.projectBuilder(item);
-        //         console.log("inside forEach data", data);
-        //         return data;
-        //     }
-        // });
-        selectProject(items);
-
+        items.forEach((item) => {
+            if (this.id === item.ID) {
+                templates.projectBuilder(item);
+            }
+        });
     })
-    .then((data) => {
-        console.log("outside forEach data", data);
-        history.pushState(data, this.id, this.id);
+    .then((item) => {
+        history.pushState({
+            ID: item.ID,
+            title: item.title,
+            subtitle: item.subtitle,
+            projectType: item.projectType,
+            brief: item.brief,
+            tech: item.tech,
+            github: item.github,
+            url: item.url,
+            designBrief: item.designBrief,
+            logo: item.logo,
+            image01: item.image01,
+            image02: item.image02,
+            image03: item.image03,
+            image04: item.image04,
+            image05: item.image05
+        }, null, item.ID);
     });
 });
+
+window.onpopstate = function (item) {
+    var content = "";
+    if (item.state) {
+        content = item.state.project;
+    }
+    templates.projectBuilder(content);
+};
+
+// $(document).on("click", ".port-card", function () {
+//     console.log("clicked");
+//     history.pushState(null, this.id, this.id);
+//     db.getItem(this.id)
+//     .then((items) => {
+//         // items.forEach((item) => {
+//         //     if (this.id === item.ID) {
+//         //         let data = templates.projectBuilder(item);
+//         //         console.log("inside forEach data", data);
+//         //         return data;
+//         //     }
+//         // });
+//         selectProject(items);
+
+//     });
+// });
 
 db.getItems();
 
 //Browser History Back Button Fix
-window.addEventListener('popstate', e => {
-    window.history.back();
+// window.addEventListener('popstate', e => {
+//     window.history.back();
 
-});
+// });
 
 
 

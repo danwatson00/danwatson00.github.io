@@ -2,7 +2,7 @@
 "use strict";
 // $ = require('jquery');
 
-function projectBuilder(item) {
+function projectBuilder(item, index) {
     console.log("projectBuilder Item", item);
     let projectCardDiv = 
             `<div>
@@ -20,8 +20,11 @@ function projectBuilder(item) {
                 </div>
                 <div class="proj-div">
                     <h3>Screenshots</h3>
-                    <img src="${item.imageHome}" class="project-img" alt="website sample image" />
-                    <img src="${item.image1}" class="project-img" alt="a second website sample image" />
+                    <img class="project-img" src="${item.image01}" alt="website sample image">
+                    <img class="project-img" src="${item.image02}" alt="website sample image">
+                    <img class="project-img" src="${item.image03}" alt="website sample image">
+                    <img class="project-img" src="${item.image04}" alt="website sample image">
+                    <img class="project-img" src="${item.image05}" alt="website sample image">
                 </div>
                 <div class="proj-div">
                     <h3>Project Links</h3>
@@ -82,44 +85,80 @@ let templates = require('./DOMBuilder'),
     db = require('./getData');
 
 
-function selectProject(items) {
-    items.forEach((item) => {
-        console.log("items", items);
-        console.log("this.id", this.id);
-    if (this.id === item.ID) {
-        templates.projectBuilder(item);
-    }
-    });
-}
-
+// function selectProject(items) {
+//     items.forEach((item) => {
+//         console.log("items", items);
+//         console.log("this.id", this.id);
+//     if (this.id === item.ID) {
+//         templates.projectBuilder(item);
+//     }
+//     });
+// }
+db.getItems();
 
 
 $(document).on("click", ".port-card", function () {
     db.getItem(this.id)
     .then((items) => {
-        // items.forEach((item) => {
-        //     if (this.id === item.ID) {
-        //         let data = templates.projectBuilder(item);
-        //         console.log("inside forEach data", data);
-        //         return data;
-        //     }
-        // });
-        selectProject(items);
-
+        items.forEach((item) => {
+            if (this.id === item.ID) {
+                templates.projectBuilder(item);
+            }
+        });
     })
-    .then((data) => {
-        console.log("outside forEach data", data);
-        history.pushState(data, this.id, this.id);
+    .then((item) => {
+        history.pushState({
+            ID: item.ID,
+            title: item.title,
+            subtitle: item.subtitle,
+            projectType: item.projectType,
+            brief: item.brief,
+            tech: item.tech,
+            github: item.github,
+            url: item.url,
+            designBrief: item.designBrief,
+            logo: item.logo,
+            image01: item.image01,
+            image02: item.image02,
+            image03: item.image03,
+            image04: item.image04,
+            image05: item.image05
+        }, null, item.ID);
     });
 });
+
+window.onpopstate = function (item) {
+    var content = "";
+    if (item.state) {
+        content = item.state.project;
+    }
+    templates.projectBuilder(content);
+};
+
+// $(document).on("click", ".port-card", function () {
+//     console.log("clicked");
+//     history.pushState(null, this.id, this.id);
+//     db.getItem(this.id)
+//     .then((items) => {
+//         // items.forEach((item) => {
+//         //     if (this.id === item.ID) {
+//         //         let data = templates.projectBuilder(item);
+//         //         console.log("inside forEach data", data);
+//         //         return data;
+//         //     }
+//         // });
+//         selectProject(items);
+
+//     });
+// });
 
 db.getItems();
 
 //Browser History Back Button Fix
-window.addEventListener('popstate', e => {
-    selectProject(e.state.data);
+// window.addEventListener('popstate', e => {
+//     window.history.back();
 
-});
+// });
 
 
 

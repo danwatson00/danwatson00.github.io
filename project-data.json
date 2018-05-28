@@ -10,9 +10,11 @@
         "url": "https://danwatson00.github.io/my-camera-bag/",
         "designBrief": "https://docs.google.com/presentation/d/1uK3Kk6wwlbsaHiWcvdsoObaI_5hK41LWFHQtQmEpSgc/edit?usp=sharing",
         "logo": "/img/my-camera-bags-logo.png",
-        "imageHome": "/img/my-camera-bag-screen.jpg",
-        "image1": "/img/my-camera-bags-02.jpg",
-        "image2":""
+        "image01": "/img/my_camera_bags_01.jpg",
+        "image02": "/img/my_camera_bags_02.jpg",
+        "image03": "/img/my_camera_bags_03.jpg",
+        "image04": "/img/my_camera_bags_04.jpg",
+        "image05": "/img/my_camera_bags_05.jpg"
     },
     {   
         "ID": "second",
@@ -25,9 +27,12 @@
         "url": "https://danwatson00.github.io/boys-and-girls-h4tc/",
         "designBrief": "https://app.zeplin.io/project/5acfa4c0e81dd68145af8f0f",
         "logo": "/img/bgc-logo.png",
-        "imageHome": "/img/boys-and-girls-02.jpg",
-        "image1": "/img/boys_girls_club.jpg",
-        "image2": ""
+        "image01":"/img/bgc-01.jpg", 
+        "image02": "/img/bgc-02.jpg",
+        "image03": "/img/bgc-03.jpg",
+        "image04": "/img/bgc-04.jpg",
+        "image05": "/img/bgc-05.jpg"
+
     },
     {
         "ID": "third",
@@ -55,9 +60,11 @@
         "url": "http://thephotoblaster.com",
         "designBrief": "",
         "logo": "/img/photo-blaster-logo.png",
-        "imageHome": "/img/photo-blaster-01.jpg",
-        "image1": "/img/photo-blaster-02.jpg",
-        "image2": ""
+        "image01": "/img/blaster_01.jpg",
+        "image02": "/img/blaster_02.jpg",
+        "image03": "/img/blaster_03.jpg",
+        "image04": "/img/blaster_04.jpg",
+        "image05": "/img/blaster_05.jpg"
     },
     {
         "ID": "",
@@ -103,7 +110,22 @@
         "imageHome": "img/",
         "image1": "img/",
         "image2": ""
-    }
-    
-    
+    },
+    {
+        "ID": "ninth",
+        "title": "Crime Checkers",
+        "subtitle": "Public Data API and React",
+        "projectType": "Group Project",
+        "brief": "For our last group project, we were tasked finding a way to use the public data avaialbe from the Nashville public data API. We used the Police Call Log data to provide those interested with almost up to the minute data on calls to Metro Nashville.",
+        "tech": "React JS, HTML5, CSS3, JavaScript, Bootstrap, Reactstrap, Google Maps API, Nashville Public Data API",
+        "github": "https://github.com/nss-day-cohort-24/uix-crime-checker",
+        "url": "",
+        "designBrief": "https://docs.google.com/presentation/d/1-ga337wjhJ_ASTBfvLuaSSKqRYGcPd7qDroTPsZB2aU/edit?usp=sharing",
+        "logo": "img/crime_checker_logo.png",
+        "image01": "/img/crime_checker01.jpg",
+        "image02": "/img/crime_checker02.jpg",
+        "image03": "/img/crime_checker03.jpg",
+        "image04": "/img/crime_checker04.jpg",
+        "image05": "/img/crime_checker05.jpg"
+    }    
 ]
