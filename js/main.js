@@ -5,15 +5,6 @@ let templates = require('./DOMBuilder'),
     db = require('./getData');
 
 
-// function selectProject(items) {
-//     items.forEach((item) => {
-//         console.log("items", items);
-//         console.log("this.id", this.id);
-//     if (this.id === item.ID) {
-//         templates.projectBuilder(item);
-//     }
-//     });
-// }
 db.getItems();
 
 
@@ -49,7 +40,6 @@ window.onpopstate = function (event) {
     let content = "";
     if (event.state) {
         content = event.state;
-        console.log("content", content);
     }
     templates.projectBuilder(content);
 };
@@ -88,58 +78,11 @@ $(document).on("click", ".dropdown-item", function () {
 db.getItems();
 
 
-// .then((item) => {
-//     history.pushState({
-//         ID: item.ID,
-//         title: item.title,
-//         subtitle: item.subtitle,
-//         projectType: item.projectType,
-//         brief: item.brief,
-//         tech: item.tech,
-//         github: item.github,
-//         url: item.url,
-//         designBrief: item.designBrief,
-//         logo: item.logo,
-//         image01: item.image01,
-//         image02: item.image02,
-//         image03: item.image03,
-//         image04: item.image04,
-//         image05: item.image05
-//     }, item.title, item.ID);
-// });
-
-// $(document).on("click", ".port-card", function () {
-//     console.log("clicked");
-//     history.pushState(null, this.id, this.id);
-//     db.getItem(this.id)
-//     .then((items) => {
-//         // items.forEach((item) => {
-//         //     if (this.id === item.ID) {
-//         //         let data = templates.projectBuilder(item);
-//         //         console.log("inside forEach data", data);
-//         //         return data;
-//         //     }
-//         // });
-//         selectProject(items);
-
-//     });
-// });
-
-
-
-//Browser History Back Button Fix
-// window.addEventListener('popstate', e => {
-//     window.history.back();
-
-// });
-
-
 //LOAD PROJECT TO DOM
 function loadProjectToDom(ID) {
     // templates.clearGearDiv();
     db.getItem(ID)
         .then((result) => {
-            console.log("result", result);
             templates.projectBuilder(result);
         });
 }
@@ -152,7 +95,6 @@ $(function () {
         history.pushState(null, null, ID);
         db.getItem(ID)
             .then((result) => {
-                console.log("result", result);
                 templates.projectBuilder(result);
     }
 );

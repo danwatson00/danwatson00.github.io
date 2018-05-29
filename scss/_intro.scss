@@ -49,6 +49,19 @@
     color: $red; 
 }
 
+#intro-p {
+    margin-top: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+#intro-p p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
 // #intro {
 //     -moz-animation: cssAnimation 0s ease-in 8s forwards;
 //     /* Firefox */

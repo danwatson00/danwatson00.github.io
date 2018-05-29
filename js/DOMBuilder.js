@@ -2,7 +2,6 @@
 // $ = require('jquery');
 
 function projectBuilder(item, index) {
-    console.log("projectBuilder Item", item);
     let projectCardDiv = 
             `<div>
                 <div class="proj-div">

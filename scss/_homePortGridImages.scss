@@ -66,7 +66,7 @@
 }
 
 
-#first {
+#my-camera-bags {
     background: 
         linear-gradient(
             rgba(70, 70, 70, 0.5),
@@ -74,40 +74,40 @@
         ),
         url("/img/my_camera_bags_01.jpg") no-repeat center;
     background-size: cover;
-    grid-area: first;
+    grid-area: my-camera-bags;
 }
 
 
-#second {
+#hack-for-the-community {
     background: linear-gradient(
             rgba(70, 70, 70, 0.5),
             rgba(70, 70, 70, 0.5)
         ),
         url("/img/bgc-04.jpg") no-repeat center;
     background-size: cover;
-    grid-area: second;
+    grid-area: hack-for-the-community;
 }
 
 
-#third {
+#wake-up-app {
     background: linear-gradient(
             rgba(70, 70, 70, 0.5),
             rgba(70, 70, 70, 0.5)
         ),
         url("/img/wakeup-01.jpg") no-repeat center;
     background-size: cover;
-    grid-area: third;
+    grid-area: wake-up-app;
 }
 
 
-#fourth {
+#photo-blaster {
     background: linear-gradient(
             rgba(70, 70, 70, 0.5),
             rgba(70, 70, 70, 0.5)
         ),
         url("/img/photo_blaster_2.jpg") no-repeat center;
     background-size: cover;
-    grid-area: fourth;
+    grid-area: photo-blaster;
 }
 
 
@@ -133,12 +133,12 @@
 }
 
 
-#seventh {
+#wide-world-travel {
     background: linear-gradient(
             rgba(70, 70, 70, 0.5),
             rgba(70, 70, 70, 0.5)
         ),
         url("/img/wide-world-travel-01.jpg") no-repeat center;
     background-size: cover;
-    grid-area: seventh;
+    grid-area: wide-world-travel;
 }

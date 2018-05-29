@@ -120,7 +120,7 @@
   color: white;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "first first first second" "first first first third" "seventh seventh seventh seventh" "fourth fifth fifth fifth" "sixth fifth fifth fifth";
+  grid-template-areas: "my-camera-bags my-camera-bags my-camera-bags hack-for-the-community" "my-camera-bags my-camera-bags my-camera-bags wake-up-app" "wide-world-travel wide-world-travel wide-world-travel wide-world-travel" "photo-blaster fifth fifth fifth" "sixth fifth fifth fifth";
   grid-column-gap: 10px;
   grid-row-gap: 10px; }
 
@@ -172,25 +172,25 @@
   vertical-align: bottom;
   margin: 5px 0; }
 
-#first {
+#my-camera-bags {
   background: linear-gradient(rgba(70, 70, 70, 0.5), rgba(70, 70, 70, 0.5)), url("/img/my_camera_bags_01.jpg") no-repeat center;
   background-size: cover;
-  grid-area: first; }
+  grid-area: my-camera-bags; }
 
-#second {
+#hack-for-the-community {
   background: linear-gradient(rgba(70, 70, 70, 0.5), rgba(70, 70, 70, 0.5)), url("/img/bgc-04.jpg") no-repeat center;
   background-size: cover;
-  grid-area: second; }
+  grid-area: hack-for-the-community; }
 
-#third {
+#wake-up-app {
   background: linear-gradient(rgba(70, 70, 70, 0.5), rgba(70, 70, 70, 0.5)), url("/img/wakeup-01.jpg") no-repeat center;
   background-size: cover;
-  grid-area: third; }
+  grid-area: wake-up-app; }
 
-#fourth {
+#photo-blaster {
   background: linear-gradient(rgba(70, 70, 70, 0.5), rgba(70, 70, 70, 0.5)), url("/img/photo_blaster_2.jpg") no-repeat center;
   background-size: cover;
-  grid-area: fourth; }
+  grid-area: photo-blaster; }
 
 #fifth {
   background: linear-gradient(rgba(70, 70, 70, 0.5), rgba(70, 70, 70, 0.5)), url("/img/coding-screen.jpg") no-repeat center;
@@ -202,10 +202,10 @@
   background-size: cover;
   grid-area: sixth; }
 
-#seventh {
+#wide-world-travel {
   background: linear-gradient(rgba(70, 70, 70, 0.5), rgba(70, 70, 70, 0.5)), url("/img/wide-world-travel-01.jpg") no-repeat center;
   background-size: cover;
-  grid-area: seventh; }
+  grid-area: wide-world-travel; }
 
 #intro {
   align-self: left !important; }
@@ -243,6 +243,17 @@
   animation-name: rubberBand 1s !important;
   color: red; }
 
+#intro-p {
+  margin-top: 20px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px; }
+
+#intro-p p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1.2em; }
+
 /* Media Queries */
 @media only screen and (max-width: 700px) {
   #hamburger-img {
@@ -262,7 +273,7 @@
 
   #portfolio-div {
     grid-template-columns: 1fr;
-    grid-template-areas: "first" "second" "third" "seventh" "fourth" "fifth" "sixth"; }
+    grid-template-areas: "my-camera-bags" "hack-for-the-community" "wake-up-app" "wide-world-travel" "photo-blaster" "fifth" "sixth"; }
 
   #main-nav {
     display: none; }
