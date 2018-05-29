@@ -9,7 +9,6 @@ $(function () {
     function tapHandler(ID) {
         db.getItem(ID)
             .then((result) => {
-                console.log("result", result);
                 templates.projectBuilder(result);
             }
             );

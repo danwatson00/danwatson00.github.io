@@ -21,13 +21,4 @@ function getItem(ID) {
     );
 }
 
-function getDropdownItem(id) {
-    return $.ajax({
-        url: `./project-data.json`
-    }).done((items) => {
-        return items;
-        }
-    );
-}
-
-module.exports = { getItems, getItem, getDropdownItem };
+module.exports = { getItems, getItem };

@@ -1,6 +1,6 @@
 [
     {   
-        "ID": "first", 
+        "ID": "my-camera-bags", 
         "title": "My Camera Bags",
         "subtitle": "Independent Capstone Project",
         "projectType": "",
@@ -17,7 +17,7 @@
         "image05": "/img/my_camera_bags_05.jpg"
     },
     {   
-        "ID": "second",
+        "ID": "hack-for-the-community",
         "title": "Boys and Girls Club Survey App",
         "subtitle": "2018 Hack for the Community First Place Project",
         "projectType": "36-hour Hack-a-thon Group Project",
@@ -35,7 +35,7 @@
 
     },
     {
-        "ID": "third",
+        "ID": "wake-up-app",
         "title": "WakeUp Personal Dashboard",
         "subtitle": "React Web App",
         "projectType": "Group Project",
@@ -52,7 +52,7 @@
         "image05": "/img/wakeup-05.jpg"
     },
     {
-        "ID": "fourth",
+        "ID": "photo-blaster",
         "title": "The Photo Blaster",
         "subtitle": "The No Booth Photo Booth",
         "projectType": "Professional Business Branding",
@@ -84,8 +84,8 @@
         "image2": ""
     },
     {
-        "ID": "seventh",
-        "title": "World Wide Travel",
+        "ID": "wide-world-travel",
+        "title": "Wide World Travel",
         "subtitle": "ReactJS Project",
         "projectType": "Independent Project",
         "brief": "The purpose of this project was to learn the React framework. I learned how to use react components and props, as well as how state works. I'm impressed with how fast and responsive React is. I have also started compiling a library of my own React components and I look forward to putting those to use in the future.",

@@ -7,13 +7,17 @@
     margin-bottom: 0;
 }
 
+// #hi, #hi-follow {
+//     font-size: 3em;
+//     font-family: $font2;
+// }
+
 #hi, #hi-follow {
     font-size: 3em;
     font-family: $font2;
 }
 
 #hi-follow {
-    // margin-top: 0.25em;
     margin-bottom: 1em;
 
 }
@@ -26,15 +30,36 @@
 }
 
 .blast {
-animation-duration: 2s;
-  animation-fill-mode: both;
-  animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+#portfolio-title {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-family: $font2;
 }
 
 .blast:hover {
     -webkit-animation-name: rubberBand 1s !important;
     animation-name: rubberBand 1s !important;
     color: $red; 
+}
+
+#intro-p {
+    margin-top: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+
+#intro-p p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
 }
 
 // #intro {
