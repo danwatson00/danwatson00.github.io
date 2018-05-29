@@ -231,6 +231,13 @@
   animation-fill-mode: both;
   animation-iteration-count: 1; }
 
+#portfolio-title {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  font-family: Roboto, Helvetica, sans-serif; }
+
 .blast:hover {
   -webkit-animation-name: rubberBand 1s !important;
   animation-name: rubberBand 1s !important;

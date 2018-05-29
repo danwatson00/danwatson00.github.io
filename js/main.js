@@ -23,34 +23,33 @@ $(document).on("click", ".port-card", function () {
         items.forEach((item) => {
             if (this.id === item.ID) {
                 templates.projectBuilder(item);
+                history.pushState({
+                    ID: item.ID,
+                    title: item.title,
+                    subtitle: item.subtitle,
+                    projectType: item.projectType,
+                    brief: item.brief,
+                    tech: item.tech,
+                    github: item.github,
+                    url: item.url,
+                    designBrief: item.designBrief,
+                    logo: item.logo,
+                    image01: item.image01,
+                    image02: item.image02,
+                    image03: item.image03,
+                    image04: item.image04,
+                    image05: item.image05
+                }, item.title, item.ID);
             }
         });
-    })
-    .then((item) => {
-        history.pushState({
-            ID: item.ID,
-            title: item.title,
-            subtitle: item.subtitle,
-            projectType: item.projectType,
-            brief: item.brief,
-            tech: item.tech,
-            github: item.github,
-            url: item.url,
-            designBrief: item.designBrief,
-            logo: item.logo,
-            image01: item.image01,
-            image02: item.image02,
-            image03: item.image03,
-            image04: item.image04,
-            image05: item.image05
-        }, item.title, item.ID);
     });
 });
 
-window.onpopstate = function (item) {
+window.onpopstate = function (event) {
     let content = "";
-    if (item.state) {
-        content = item.state.project;
+    if (event.state) {
+        content = event.state;
+        console.log("content", content);
     }
     templates.projectBuilder(content);
 };
@@ -63,12 +62,51 @@ $(document).on("click", ".dropdown-item", function () {
             let str = this.id.substring(0, this.id.length - 1);
             if (str === item.ID) {
                 templates.projectBuilder(item);
+                history.pushState({
+                    ID: item.ID,
+                    title: item.title,
+                    subtitle: item.subtitle,
+                    projectType: item.projectType,
+                    brief: item.brief,
+                    tech: item.tech,
+                    github: item.github,
+                    url: item.url,
+                    designBrief: item.designBrief,
+                    logo: item.logo,
+                    image01: item.image01,
+                    image02: item.image02,
+                    image03: item.image03,
+                    image04: item.image04,
+                    image05: item.image05
+                }, null, item.ID);
             }
         });
     });
 });
 
 
+db.getItems();
+
+
+// .then((item) => {
+//     history.pushState({
+//         ID: item.ID,
+//         title: item.title,
+//         subtitle: item.subtitle,
+//         projectType: item.projectType,
+//         brief: item.brief,
+//         tech: item.tech,
+//         github: item.github,
+//         url: item.url,
+//         designBrief: item.designBrief,
+//         logo: item.logo,
+//         image01: item.image01,
+//         image02: item.image02,
+//         image03: item.image03,
+//         image04: item.image04,
+//         image05: item.image05
+//     }, item.title, item.ID);
+// });
 
 // $(document).on("click", ".port-card", function () {
 //     console.log("clicked");
@@ -87,33 +125,13 @@ $(document).on("click", ".dropdown-item", function () {
 //     });
 // });
 
-db.getItems();
+
 
 //Browser History Back Button Fix
 // window.addEventListener('popstate', e => {
 //     window.history.back();
 
 // });
-
-
-
-
-//blast is used to separate characters
-var rubber = $('h1').blast({ delimiter: 'character' });
-
-$('h2').blast({ delimiter: 'character', customClass: 'rubberBand'});
-
-$(".blast").mouseenter(function () {
-    var el = $(this);
-
-    $(this).addClass('animated rubberBand');
-    $(this).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
-
-        el.removeClass('animated rubberBand');
-
-    });
-
-});
 
 
 //LOAD PROJECT TO DOM
@@ -139,6 +157,24 @@ $(function () {
     }
 );
 }
+});
+
+
+//blast is used to separate characters
+var rubber = $('h1').blast({ delimiter: 'character' });
+
+$('h2').blast({ delimiter: 'character', customClass: 'rubberBand' });
+
+$(".blast").mouseenter(function () {
+    var el = $(this);
+
+    $(this).addClass('animated rubberBand');
+    $(this).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+
+        el.removeClass('animated rubberBand');
+
+    });
+
 });
 
 // let blogPosts = require("./fetch-blog"),

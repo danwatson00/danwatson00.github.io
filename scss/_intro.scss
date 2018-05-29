@@ -7,13 +7,17 @@
     margin-bottom: 0;
 }
 
+// #hi, #hi-follow {
+//     font-size: 3em;
+//     font-family: $font2;
+// }
+
 #hi, #hi-follow {
     font-size: 3em;
     font-family: $font2;
 }
 
 #hi-follow {
-    // margin-top: 0.25em;
     margin-bottom: 1em;
 
 }
@@ -26,9 +30,17 @@
 }
 
 .blast {
-animation-duration: 2s;
-  animation-fill-mode: both;
-  animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+#portfolio-title {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    font-family: $font2;
 }
 
 .blast:hover {
