@@ -245,8 +245,8 @@
 
 #intro-p {
   margin-top: 20px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
   margin-bottom: 20px; }
 
 #intro-p p {
@@ -2743,6 +2743,33 @@ label {
 
 #resume-header {
   border-bottom: 2px solid black; }
+
+#resume-div {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto; }
+
+#res-col-1 {
+  grid-row: 1;
+  grid-column: 1; }
+
+#res-col-2 {
+  grid-row: 1;
+  grid-column: 2; }
+
+#res-col-3 {
+  grid-row: 2;
+  grid-column: 1 / span 2; }
+
+#projects-art {
+  display: grid;
+  grid-template-columns: auto auto; }
+
+#res-cam-div {
+  grid-column: 1; }
+
+#res-club-div {
+  grid-column: 2; }
 
 a:link, #projectsDropdown {
   color: black;

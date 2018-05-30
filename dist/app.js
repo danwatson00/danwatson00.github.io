@@ -118,8 +118,11 @@ window.onpopstate = function (event) {
     let content = "";
     if (event.state) {
         content = event.state;
+        templates.projectBuilder(content);
+    }else {
+        window.location.href = "/";
     }
-    templates.projectBuilder(content);
+    
 };
 
 

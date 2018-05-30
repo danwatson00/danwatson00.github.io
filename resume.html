@@ -17,119 +17,183 @@
     <div class="body-container">
 
         <header>
+        
             <div id="navbar">
-            <img src="img/dw-logo1.png" id="nav-logo" alt="Dan Watson logo">
-            <ul class="nav">
-                    <!-- <li><a href="index.html">HOME</a></li> -->
-                    <li><a href="index.html">PORTFOLIO</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="resume.html">RESUME</a></li>
+                <a href="index.html" id="nav-logo-link">
+                    <img src="img/dw-logo1.png" id="nav-logo" alt="Dan Watson logo">
+                </a>
+                <div id="hamburger" class="dropleft">
+                    <img id="hamburger-img" src="img/hamburger.png" class="dropdown-toggle" id="dropdownMenuButton" alt="hamburger menu icon"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a href="/index.html" class="dropdown-item">HOME</a>
+                        <a href="/about.html" class="dropdown-item">ABOUT</a>
+                        <a href="/resume.html" class="dropdown-item">RESUME</a>
+                        <a href="/contact.html" class="dropdown-item">CONTACT</a>
+                    </div>
+                </div>
+                <ul class="nav" id="main-nav">
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" id="projectsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PORTFOLIO</a>
+                        <div class="dropdown-menu" aria-labelledby="projectsDropdown">
+                            <a class="dropdown-item" id="my-camera-bags1">MY CAMERA BAGS</a>
+                            <a class="dropdown-item" id="hack-for-the-community2">HACK FOR THE COMMUNITY</a>
+                            <a class="dropdown-item" id="wake-up-app3">WAKE/UP</a>
+                            <a class="dropdown-item" id="wide-world-travel7">WIDE WORLD TRAVEL</a>
+                            <a class="dropdown-item" id="photo-blaster4">THE PHOTO BLASTER</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="DAN_WATSON_RESUME.pdf" target="_blank">RESUME</a>
+                    </li>
+                    <!-- <li><a href="resume.html">RESUME</a></li> -->
                     <!-- <li><a href="blog.html">BLOG</a></li> -->
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li>
+                        <a href="contact.html">CONTACT</a>
+                    </li>
                 </ul>
             </div>
         </header>
 
         <div>
             <main>
+                <h1 id="resume-header">Resume</h1>
                 <div id="resume-div" class="proj-div">
-                    <h1 id="resume-header" >Resume</h1>
+                    <div id="res-col-1">
+                        <article class="res-art" id="edu-art">
+                            <h2>EDUCATION</h2>
+                            <section>
+                                <h3>NASHVILLE SOFTWARE SCHOOL</h3>
+                                <h5>FRONT END DEVELOPMENT</h5>
+                                <h5>UI/UX DESIGN</h5>
+                            </section>
+                            <section>
+                                <h3>SAVANNAH COLLEGE OF ART AND DESIGN</h3>
+                                <h5>MASTER OF FINE ART DEGREE</h5>
+                                <h5>PHOTOGRAPHY</h5>
+                            </section>
+                            <section>
+                                <h3>CLARK UNIVERSITY</h3>
+                                <h5>BACHELOR OF ARTS DEGREE</h5>
+                                <h5>COMMUNICATIONS AND CULTURE</h5>
+                                <h5>STUDIO ART</h5>
+                            </section>
+                        </article>
+                        <article class="res-art" id="pro-art">
+                            <h2>PROFESSIONAL SKILLS</h2>
+                            <section>
+                                <ul>
+                                    <li>WEB DEVELOPMENT</li>
+                                    <li>UI/UX DESIGN</li>
+                                    <li>GRAPHIC DESIGN</li>
+                                    <li>PHOTOGRAPHY</li>
+                                    <li>BRAND DESIGN</li>
+                                    <li>IMAGE EDITING</li>
+                                    <li>DESIGN SYSTEMS</li>
+                                    <li>PROTOTYPING</li>
+                                </ul>
+                            </section>
+                        </article>
                 
-                <article class="resume-art proj-div" id="education">
-                    <h2>Education</h2>
-                    <section>
-                        <h3>Nashville Software School</h3>
-                        <h5>Front End Web Developer and UX/UI Designer Full-time 6-month Boot Camp</h5>
-                    </section>
-                    <section>
-                        <h3>Savannah College of Art and Design</h3>
-                        <h5>Master of Fine Arts degree in Photography</h5>
-                    </section>
-                    <section>
-                        <h3>Clark University</h3>
-                        <h5>Bachelor of Arts degree in Studio Art,  Communication and Culture</h5>
-                    </section>
-                    <section>
-                        <h3>Burren College of Art</h3>
-                        <h5>Sememster Abroady</h5>
-                    </section>
-                </article>
-        
-                <article class="resume-art proj-div" id="experience">
-                    <section>
-                        <h2>Experience</h2>
-                        <h3>Watson Studios</h3>
-                        <h5>Owner and Principal Photographer, <i>2007-2018</i></h5>
-                        <ul>
-                            <li>Provide lifestyle, still life, and commercial photography services to businesses and individuals</li>
-                            <li>Responsible for all aspects of the business including branding, marketing, design, SEO, online advertising, website management</li>
-                            <li>Manage multiple part-time employees and interns, including associate photographers, videographers, photo booth operators, and designers</li>
-                        </ul>
-                    </section>
+                        <article id="dev-art" class="res-art">
+                            <h2>DEVELOPMENT SKILLS</h2>
+                            <section>
+                                <li>REACT JS</li>
+                                <li>JAVASCRIPT</li>
+                                <li>JQUERY</li>
+                                <li>HTML5/CSS3</li>
+                                <li>BOOTSTRAP</li>
+                                <li>GIT/GITHUB</li>
+                                <li>NODE.JS</li>
+                                <li>GRUNT</li>
+                                <li>SASS/SCSS</li>
+                                <li>VSCODE</li>
+                                <li>FIREBASE</li>
+                                <li>API REQUESTS</li>
+                                <li>PHOTOSHOP</li>
+                                <li>ILLUSTRATOR</li>
+                                <li>INDESIGN</li>
+                                <li>XD</li>
+                                <li>SKETCH</li>
+                                <li>WORDPRESS</li>
+                                <li>SQUARESPACE</li>
+                                <li>TERMINAL</li>
+                            </section>
+                        </article>
+                    </div>
+                    <div id="res-col-2">
+                        <article class="res-art" id="experience">
+                            <h2>EXPERIENCE</h2>
+                            <section>
+                                <h3>NASHVILLE SOFTWARE SCHOOL</h3>
+                                <h5>APPRENTICE FRONT END DEVELOPER AND UI/UX DESIGNER, <i>2018</i></h5>
+                                <ul>
+                                    <li>Participated in hands on application of development fundamentals through group and individual projects reflecting real business problems</li>
+                                    <li>Implemented source code version control with Git/GitHub</li>
+                                    <li>Utilized project management/tracking with Github Projects and Issue Tracking</li>
+                                    <li>Wrote DRY, modular, readable code and reusable components</li>
+                                    <li>Performed DOM manipulation and AJAX calls with jQuery</li>
+                                    <li>Built applications in the React framework with HTML, CSS, and JavaScript</li>
+                                    <li>Used task Automation with Grunt: Linting with JSHint, module bundling with Browserify, and SASS compilation</li>
+                                    <li>Styled and animated apps with CSS and SASS, using Bootstrap, Flexbox, and CSS Grid</li>
+                                    <li>Created user stories based on assessment of user experience and workflow</li>
+                                    <li>Conveyed interactive story ideas and complex interactions with wireframes and prototypes</li>
+                                    <li>Applied corporate style guides and pattern libraries to applications and websites</li>
+                                    <li>Focused on user experience with intentional design focused on optimizing speed, efficiency and smooth functionality</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h3>WATSON STUDIOS</h3>
+                                <h5>OWNER AND PRINCIPAL PHOTOGRAPHER, <i>2007-2018</i></h5>
+                                <ul>
+                                    <li>Founder, owner, lead photographer, and designer responsible for all marketing and design multiple brands, websites, SEO,
+                                    digital advertising, and print media</li>
+                                    <li>Designed and built and open-air photo booth, The Photo Blaster, with an integrated touchscreen and interactive kiosk that
+                                    allows users to print images on site as well as text images and gifs to themselves via Twilio</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h3>WEST NOTTINGHAM ACADEMY</h3>
+                                <h5>TEACHER OF PHOTOGRAPHY, <i>2005-2007</i></h5>
+                                <ul>
+                                    <li>Acquired funding for, designed, and built a digital darkroom and imaging lab</li>
+                                    <li>Taught all photography courses, developed new curriculum, and introduced Advanced/Digital Photography courses</li>
+                                    <li>Served as Dorm Parent, Coach, Student Advisor, and Yearbook Faculty Advisor</li>
+                                </ul>
+                            </section>
 
-                    <section>
-                        <h3>The Photo Blaster</h3>
-                        <h5>Owner, <i>2013-2018</i></h5>
-                            <ul>
-                                <li>Personally designed and constructed a free-standing, self-operating, open-air photo booth</li>
-                                <li>Created all branding aspects including logo, printed materials, and web design</li>
-                                <li>Managed all aspects of the business including staff, scheduling, advertising, and client interaction</li>
-                            </ul>
-                    </section> 
-
-                    <section>
-                        <h3>West Nottingham Academy</h3>
-                        <h5>Photography Teacher, <i>2005-2007</i></h5>
-                        <ul>
-                            <li>Acquired funding for, designed, and built a digital darkroom and imaging lab</li>
-                            <li>Taught all photography courses, developed new curriculum, and introduced Advanced/Digital Photography courses</li>
-                            <li>Served as Dorm Parent, Coach, Student Advisor, and Yearbook Faculty Advisor</li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h3>Cheshire Academy</h3>
-                        <h5>Mathematics and Photography Teacher, <i>2001-2003</i></h5>
-                        <ul>
-                            <li>Taught all photography courses and developed new curriculum incorporating digital, traditional, and alternative methods of photography</li> 
-                            <li>Secured funding for, designed, and built a new wet darkroom for students</li> 
-                            <li>Organized and led two international student trips, including a guided tour of Greece and a dog sledding trip in Northern Canada</li>
-                        </ul>
-                    </section>
-
-                </article>
-
-                <article id="tech-art" class="proj-div">
-                    <h2>Technologies</h2>
-                    <section>
-                        <p>HTML5, CSS3, JavaScript, XD, VSC, Git, Github, WordPress, Photoshop, InDesign, Illustrator, Lightroom, Sketch, Office</p>
-                    </section>
-                </article>
-
-                <article id="projects-art" class="proj-div">
-                    <h2>Projects</h2>
-                    <section>
-                        <h3>My Camera Bags, <i><a href="http://www.mycamerabags.com">www.MyCameraBags.com</a></i></h3>
-                        <h5>Independent Capstone Project</h5>
-                        <ul>
-                            <li>Personally created a web app for photographers to organize their equipment into lists, view important information about their
-                            equipment, and see what equipment other photographers have in their camera bags.</li>
-                            <li>Built as a multi-page app leveraging JavaScript with Browserify, SASS, Bootstrap, JQuery, and CSS Grid</li>
-                            <li>Users can login and authenticate via Firebase as well as create, update, edit, and delete items from their user inventories</li>
-                        </ul>
-                    </section>
-                    <section>
-                        <h3>Boys and Girls Club, Hack for the Community</h3>
-                        <h5>First Place Team Win</h5>
-                        <ul>
-                            <li>Personally created a web app for photographers to organize their equipment into lists, view important information about their
-                            equipment, and see what equipment other photographers have in their camera bags.</li>
-                            <li>Built as a multi-page app leveraging JavaScript with Browserify, SASS, Bootstrap, JQuery, and CSS Grid</li>
-                            <li>Users can login and authenticate via Firebase as well as create, update, edit, and delete items from their user inventories</li>
-                        </ul>
-                    </section>
-                </article>
-            </div>
+                        </article>
+                    </div>
+                    <div id="res-col-3">
+                        <article id="projects-art" class="res-art">
+                            <h2>DEVELOPMENT PROJECTS</h2>
+                            <section id="res-cam-div">
+                                <h3>MY CAMERA BAGS<i><a href="http://www.mycamerabags.com">www.MyCameraBags.com</a></i></h3>
+                                <ul>
+                                    <li>Personally created a web app for photographers to organize their equipment into lists, view important information about their
+                                    equipment, and see what equipment other photographers have in their camera bags.</li>
+                                    <li>Built as a multi-page app leveraging JavaScript with Browserify, SASS, Bootstrap, JQuery, and CSS Grid</li>
+                                    <li>Users can login and authenticate via Firebase as well as create, update, edit, and delete items from their user inventories</li>
+                                </ul>
+                            </section>
+                            <section id="res-club-div">
+                                <h3>BOYS AND GIRLS CLUB OF RUTHERFORD COUNTY<i><a href="https://danwatson00.github.io/boys-and-girls-h4tc/">VIEW DEMO</a></i></h3>
+                                <ul>
+                                    <li>Personally created a web app for photographers to organize their equipment into lists, view important information about their
+                                    equipment, and see what equipment other photographers have in their camera bags.</li>
+                                    <li>Built as a multi-page app leveraging JavaScript with Browserify, SASS, Bootstrap, JQuery, and CSS Grid</li>
+                                    <li>Users can login and authenticate via Firebase as well as create, update, edit, and delete items from their user inventories</li>
+                                </ul>
+                            </section>
+                        </article>
+                    </div>
+                </div>
             </main>
         </div>
 
