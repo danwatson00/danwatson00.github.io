@@ -27,9 +27,9 @@
         "url": "https://danwatson00.github.io/boys-and-girls-h4tc/",
         "designBrief": "https://app.zeplin.io/project/5acfa4c0e81dd68145af8f0f",
         "logo": "/img/bgc-logo.png",
-        "image01": "/img/bgc-01.jpg", 
-        "image02": "/img/bgc-02.jpg",
-        "image03": "/img/bgc-03.jpg",
+        "image01": "/img/bgc-02.jpg", 
+        "image02": "/img/bgc-04.jpg",
+        "image03": "/img/bgc-05.jpg",
         "image04": "/img/bgc-04.jpg",
         "image05": "/img/bgc-05.jpg"
 
@@ -46,10 +46,10 @@
         "designBrief": "https://danwatson00.github.io/wake-up/",
         "logo": "/img/wakeup-logo.png",
         "image01": "/img/wakeup-01.jpg",
-        "image02": "/img/wakeup-02.jpg",
-        "image03": "/img/wakeup-03.jpg",
-        "image04": "/img/wakeup-04.jpg",
-        "image05": "/img/wakeup-05.jpg"
+        "image02": "/img/wakeup-03.jpg",
+        "image03": "",
+        "image04": "",
+        "image05": ""
     },
     {
         "ID": "photo-blaster",
@@ -69,7 +69,7 @@
         "image05": "/img/blaster_05.jpg"
     },
     {
-        "ID": "",
+        "ID": "watson-studios",
         "title": "Watson Studios",
         "subtitle": "Lifestyle and Commercial Photography",
         "projectType": "Professional Business Branding",
@@ -79,9 +79,11 @@
         "url": "https://www.watson-studios.com",
         "designBrief": "",
         "logo": "",
-        "imageHome": "/img/watson-studios-01.jpg",
-        "image1": "/img/watson-studios-02.jpg",
-        "image2": ""
+        "image01": "",
+        "image02": "",
+        "image03": "",
+        "image04": "",
+        "image05": ""
     },
     {
         "ID": "wide-world-travel",
@@ -96,27 +98,29 @@
         "logo": "img/wide-world-logo.png",
         "image01": "/img/wide-world-travel-01.jpg",
         "image02": "/img/wide-world-travel-02.jpg",
-        "image03": "/img/wide-world-travel-03.jpg",
-        "image04": "/img/wide-world-travel-04.jpg",
-        "image05": "/img/wide-world-travel-05.jpg"
+        "image03": "",
+        "image04": "",
+        "image05": ""
     },
     {
-        "ID": "",
+        "ID": "number-guess",
         "title": "Number Guessing Game",
         "subtitle": "Javascript Exercise",
         "projectType": "Independent Project",
         "brief": "The purpose of this project was to learn more about JavaScript.",
         "tech": "HTML5, CSS3, JavaScript, Bootstrap",
-        "github": "https://github.com/danwatson00/wide-world-travel",
+        "github": "",
         "url": "",
         "designBrief": "",
-        "logo": "img/",
-        "imageHome": "img/",
-        "image1": "img/",
-        "image2": ""
+        "logo": "",
+        "image01": "",
+        "image02": "",
+        "image03": "",
+        "image04": "",
+        "image05": ""
     },
     {
-        "ID": "ninth",
+        "ID": "crime-checkers",
         "title": "Crime Checkers",
         "subtitle": "Public Data API and React",
         "projectType": "Group Project",
@@ -126,10 +130,27 @@
         "url": "",
         "designBrief": "https://docs.google.com/presentation/d/1-ga337wjhJ_ASTBfvLuaSSKqRYGcPd7qDroTPsZB2aU/edit?usp=sharing",
         "logo": "img/crime_checker_logo.png",
-        "image01": "/img/crime_checker01.jpg",
-        "image02": "/img/crime_checker02.jpg",
-        "image03": "/img/crime_checker03.jpg",
-        "image04": "/img/crime_checker04.jpg",
-        "image05": "/img/crime_checker05.jpg"
-    }    
+        "image01": "/img/crime-checker-01.jpg",
+        "image02": "/img/crime-checker-02.jpg",
+        "image03": "/img/crime-checker-03.jpg",
+        "image04": "",
+        "image05": ""
+    },
+    {
+        "ID": "bangazon",
+        "title": "Bangazon",
+        "subtitle": "React App with JSON Server",
+        "projectType": "Group Project",
+        "brief": "Bangazon is an app I helped create in a group at Nashville Software School. The app is built with the React JS framework and features JSON server.",
+        "tech": "React JS, HTML5, CSS3, JavaScript, Bootstrap, Reactstrap, React Router, JSON Server, Faker",
+        "github": "https://github.com/nss-day-cohort-24/uix-bangazon-lite-musty-magnets",
+        "url": "",
+        "designBrief": "https://docs.google.com/presentation/d/1-ga337wjhJ_ASTBfvLuaSSKqRYGcPd7qDroTPsZB2aU/edit?usp=sharing",
+        "logo": "img/crime_checker_logo.png",
+        "image01": "",
+        "image02": "",
+        "image03": "",
+        "image04": "",
+        "image05": ""
+    }
 ]
