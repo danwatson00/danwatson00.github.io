@@ -18,11 +18,11 @@ function projectBuilder(item, index) {
                 </div>
                 <div class="proj-div">
                     <h3>Screenshots</h3>
-                    <img class="project-img" src="${item.image01}" alt="website sample image">
-                    <img class="project-img" src="${item.image02}" alt="website sample image">
-                    <img class="project-img" src="${item.image03}" alt="website sample image">
-                    <img class="project-img" src="${item.image04}" alt="website sample image">
-                    <img class="project-img" src="${item.image05}" alt="website sample image">
+                    <img class="project-img" src="${item.image01}" onerror="this.style.display='none'; alt="website sample image">
+                    <img class="project-img" src="${item.image02}" onerror="this.style.display='none'; alt="website sample image">
+                    <img class="project-img" src="${item.image03}" onerror="this.style.display='none'; alt="website sample image">
+                    <img class="project-img" src="${item.image04}" onerror="this.style.display='none'; alt="website sample image">
+                    <img class="project-img" src="${item.image05}" onerror="this.style.display='none'; alt="website sample image">
                 </div>
                 <div class="proj-div">
                     <h3>Project Links</h3>
