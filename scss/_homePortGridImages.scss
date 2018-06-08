@@ -142,3 +142,13 @@
     background-size: cover;
     grid-area: wide-world-travel;
 }
+
+#crime-checker {
+    background: linear-gradient(
+            rgba(70, 70, 70, 0.5),
+            rgba(70, 70, 70, 0.5)
+        ),
+        url("/img/crime_checker_bk.jpg") no-repeat center;
+    background-size: cover;
+    grid-area: crime-checker;
+}
