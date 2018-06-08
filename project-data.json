@@ -120,8 +120,8 @@
         "image05": ""
     },
     {
-        "ID": "crime-checkers",
-        "title": "Crime Checkers",
+        "ID": "crime-checker",
+        "title": "Crime Checker",
         "subtitle": "Public Data API and React",
         "projectType": "Group Project",
         "brief": "For our last group project, we were tasked finding a way to use the public data avaialbe from the Nashville public data API. We used the Police Call Log data to provide those interested with almost up to the minute data on calls to Metro Nashville.",

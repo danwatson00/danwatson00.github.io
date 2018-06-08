@@ -24,3 +24,7 @@ a:active, #projectsDropdown:active {
     color: rgb(243, 4, 4);
     transition: color 0.5s ease;
 }
+
+#projectsDropdown, .dropdown-item {
+    cursor: pointer;
+}
